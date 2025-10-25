@@ -5,12 +5,14 @@ type MainCardItemType = {
   image: string;
   price?: string;
   title: string;
+  titleClass?: string;
 };
 
 const MainCard: React.FC<MainCardItemType> = ({
   image,
   price,
   title,
+  titleClass,
 }: MainCardItemType) => {
   return (
     <div className="h-85 bg-gray-2 rounded-lg overflow-hidden outline -outline-offset-1 outline-gray-4">
@@ -21,7 +23,11 @@ const MainCard: React.FC<MainCardItemType> = ({
             {price}
           </h5>
         ) : null}
-        <p className="text-gray-10 font-regular-shabnam text-base">{title}</p>
+        <h5
+          className={`text-gray-10 font-regular-shabnam text-base line-clamp-2 overflow-hidden ${titleClass}`}
+        >
+          {title}
+        </h5>
       </div>
     </div>
   );

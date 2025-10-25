@@ -24,6 +24,7 @@
   --font-thin-shabnam: Shabnam-Thin;
   --font-light-shabnam: Shabnam-Light;
 
+  --shadow-next-shadow :  0 3px 10px rgba(0,0,0,0.2)
 }
 
 @utility container {
