@@ -10,6 +10,7 @@
 @theme {
   --color-primary: #cb1b1b;
   --color-gray-2: #f9f9f9;
+  --color-gray-4: #E1E1E1;
   --color-gray-5: #d9d9d9;
   --color-gray-7: #adadad;
   --color-gray-10: #505050;
@@ -20,6 +21,8 @@
   --font-medium-shabnam: Shabnam-Medium;
   --font-thin-shabnam: Shabnam-Thin;
   --font-light-shabnam: Shabnam-Light;
+
+  --shadow-secondary: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 @utility container {
