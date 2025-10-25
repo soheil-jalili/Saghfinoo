@@ -15,6 +15,8 @@
   --color-gray-7: #adadad;
   --color-gray-10: #505050;
   --color-gray-11: #353535;
+  --color-gray-12: #212121;
+  --color-service-black: #0C0C0C;
 
   --font-regular-shabnam: Shabnam;
   --font-bold-shabnam: Shabnam-Bold;
@@ -22,7 +24,6 @@
   --font-thin-shabnam: Shabnam-Thin;
   --font-light-shabnam: Shabnam-Light;
 
-  --shadow-secondary: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 @utility container {
