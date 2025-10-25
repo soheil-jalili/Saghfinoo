@@ -11,14 +11,16 @@
   --color-primary: #cb1b1b;
   --color-primary-shade3: #871212;
   --color-gray-2: #f9f9f9;
-  --color-gray-4: #E1E1E1;
+  --color-gray-3: #ededed;
+  --color-gray-4: #e1e1e1;
   --color-gray-5: #d9d9d9;
   --color-gray-7: #adadad;
+  --color-gray-8: #909090;
   --color-gray-9: #717171;
   --color-gray-10: #505050;
   --color-gray-11: #353535;
   --color-gray-12: #212121;
-  --color-service-black: #0C0C0C;
+  --color-service-black: #0c0c0c;
 
   --font-regular-shabnam: Shabnam;
   --font-bold-shabnam: Shabnam-Bold;
@@ -26,7 +28,7 @@
   --font-thin-shabnam: Shabnam-Thin;
   --font-light-shabnam: Shabnam-Light;
 
-  --shadow-next-shadow :  0 3px 10px rgba(0,0,0,0.2)
+  --shadow-next-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 @utility container {

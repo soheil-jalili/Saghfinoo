@@ -12,6 +12,7 @@ const Footer: React.FC = () => {
         <BottomFooter />
         <BottomFooterImage />
       </div>
+      <CopyRightFooter />
     </footer>
   );
 };
@@ -331,5 +332,13 @@ const BottomFooterImage: React.FC = () => {
       height={123}
       className="mx-auto mt-[27px]"
     />
+  );
+};
+
+const CopyRightFooter = () => {
+  return (
+    <div className="py-8 bg-gray-3 text-center text-xs text-gray-8">
+      <p>حقوق این سایت متعلق به سقفینو است</p>
+    </div>
   );
 };
