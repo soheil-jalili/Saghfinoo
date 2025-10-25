@@ -9,6 +9,7 @@
 
 @theme {
   --color-primary: #cb1b1b;
+  --color-gray-2: #f9f9f9;
   --color-gray-5: #d9d9d9;
   --color-gray-7: #adadad;
   --color-gray-10: #505050;
@@ -23,6 +24,10 @@
 
 @utility container {
   @apply mx-auto max-w-[1224px];
+}
+
+.primary__btn {
+  @apply w-full bg-primary rounded-lg text-center p-4 cursor-pointer text-white text-sm font-medium-shabnam font-medium;
 }
 
 @font-face {
