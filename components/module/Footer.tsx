@@ -295,7 +295,7 @@ const BottomFooter: React.FC = () => {
         </ul>
       </div>
 
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 h-full">
         <p className="text-gray-11 text-sm mb-2 !font-medium-shabnam">
           حساب کاربری
         </p>
@@ -330,7 +330,7 @@ const BottomFooterImage: React.FC = () => {
       alt="Footer Illustration"
       width={736}
       height={123}
-      className="mx-auto mt-[27px]"
+      className="mx-auto mt-[50px]"
     />
   );
 };
