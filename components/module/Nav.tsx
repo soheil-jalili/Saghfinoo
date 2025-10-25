@@ -18,8 +18,8 @@ const Nav: React.FC = () => {
   return (
     <nav
       className={`${
-        sticky ? "w-full top-0 shadow-md" : "container top-10"
-      } bg-white flex items-center rounded-2xl fixed left-0 right-0 z-50 h-[115px] *:text-gray-10 px-8 transition-all duration-300`}
+        sticky ? "w-full top-0 shadow-md" : "container top-10 rounded-2xl"
+      } bg-white flex items-center fixed left-0 right-0 z-50 h-[115px] *:text-gray-10 px-8 transition-all duration-300`}
     >
       <Link href="/" className="ml-10">
         <Image
