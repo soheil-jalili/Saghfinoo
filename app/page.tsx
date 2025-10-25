@@ -5,15 +5,19 @@ import News from "@/components/templates/Index/News";
 import Services from "@/components/templates/Index/Services";
 import React from "react";
 
+const Main = ({ children }: { children: React.ReactNode }) => {
+  return <main>{children}</main>;
+};
+
 const Index: React.FC = () => {
   return (
-    <main>
+    <Main>
       <HeroSection />
       <Features />
       <Estate />
       <Services />
       <News />
-    </main>
+    </Main>
   );
 };
 

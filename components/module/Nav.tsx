@@ -8,24 +8,18 @@ const Nav: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 115) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
+      setSticky(window.scrollY > 115);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // پاک‌سازی (خیلی مهم)
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`container bg-white flex items-center rounded-2xl ${
-        sticky ? "sticky" : "fixed"
-      } top-10 left-0 right-0 z-50 px-8 h-[115px] *:text-gray-10 transition-all`}
+      className={`${
+        sticky ? "w-full top-0 shadow-md" : "container top-10"
+      } bg-white flex items-center rounded-2xl fixed left-0 right-0 z-50 h-[115px] *:text-gray-10 px-8 transition-all duration-300`}
     >
       <Link href="/" className="ml-10">
         <Image
@@ -36,7 +30,7 @@ const Nav: React.FC = () => {
         />
       </Link>
 
-      <ul className="flex items-center gap-6 hover:*:text-gray-11 transition-all">
+      <ul className="flex items-center gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
           <Link href="/rent">اجاره</Link>
         </li>
@@ -54,7 +48,7 @@ const Nav: React.FC = () => {
         </li>
       </ul>
 
-      <div className="flex items-center gap-9 mr-auto">
+      <div className="flex items-center gap-9">
         <Link
           href="/signin"
           className="text-base hover:text-gray-11 transition-all"
