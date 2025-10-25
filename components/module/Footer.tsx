@@ -8,10 +8,9 @@ const Footer: React.FC = () => {
       <div className="container">
         <FooterTitle />
         <TopFooter />
-
         <div className="border-b border-b-gray-5"></div>
-
         <BottomFooter />
+        <BottomFooterImage />
       </div>
     </footer>
   );
@@ -27,7 +26,7 @@ const FooterTitle: React.FC = () => {
   );
 };
 
-const TopFooter = () => {
+const TopFooter: React.FC = () => {
   return (
     <>
       <div className="flex justify-between pb-6 max-w-262 mx-auto">
@@ -218,7 +217,7 @@ const TopFooter = () => {
   );
 };
 
-const BottomFooter = () => {
+const BottomFooter: React.FC = () => {
   return (
     <div className="flex items-start justify-between pt-6 max-w-262 mx-auto h-[258px]">
       <div>
@@ -320,5 +319,17 @@ const BottomFooter = () => {
         </Link>
       </div>
     </div>
+  );
+};
+
+const BottomFooterImage: React.FC = () => {
+  return (
+    <Image
+      src={"/assets/images/footer/footer_illustration.png"}
+      alt="Footer Illustration"
+      width={736}
+      height={123}
+      className="mx-auto mt-[27px]"
+    />
   );
 };
