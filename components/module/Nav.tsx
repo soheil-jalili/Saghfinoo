@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 
 const Nav: React.FC = () => {
   const [sticky, setSticky] = useState(false);
-  const [openMenu, setOpenMenu] = useState<boolean>(true);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,11 @@ const Nav: React.FC = () => {
         sticky ? "w-full top-0 shadow-md" : "container sm:top-10 sm:rounded-2xl"
       } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 sm:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between`}
     >
-      <HiMiniBars3 className="flex sm:hidden cursor-pointer" size={24} onClick={()=>setOpenMenu(true)}/>
+      <HiMiniBars3
+        className="flex sm:hidden cursor-pointer"
+        size={24}
+        onClick={() => setOpenMenu(true)}
+      />
 
       <Link href="/" className="sm:ml-10">
         <Image
@@ -69,7 +73,7 @@ const Nav: React.FC = () => {
         </Link>
       </div>
 
-      {openMenu && <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />}
+      <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </nav>
   );
 };
