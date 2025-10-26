@@ -6,13 +6,13 @@ const NavSearch: React.FC = () => {
   const [state, setState] = useState<"rent" | "buy">("rent");
 
   return (
-    <div className="bg-white rounded-xl border border-gray-7 w-full sm:w-204 h-27 px-7">
+    <div className="bg-white rounded-lg sm:rounded-xl border border-gray-7 w-full sm:w-204  h-auto sm:h-27 px-4 sm:px-7">
       <div className="grid grid-cols-2 mt-3.5 text-center relative">
         <div className="absolute bottom-0 left-0 w-full h-[1.5px] bg-gray-5"></div>
 
         <button
           onClick={() => setState("rent")}
-          className={`pb-2 text-2xl relative transition-all duration-200  cursor-pointer ${
+          className={`pb-2 text-sm sm:text-2xl relative transition-all duration-200  cursor-pointer ${
             state === "rent"
               ? "text-gray-12 font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
               : "text-gray-9 hover:text-gray-11"
@@ -23,7 +23,7 @@ const NavSearch: React.FC = () => {
 
         <button
           onClick={() => setState("buy")}
-          className={`pb-2 text-2xl relative transition-all duration-200 cursor-pointer  ${
+          className={`pb-2 text-sm sm:text-2xl relative transition-all duration-200 cursor-pointer  ${
             state === "buy"
               ? "text-gray-12 font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
               : "text-gray-9 hover:text-gray-11"
@@ -33,7 +33,7 @@ const NavSearch: React.FC = () => {
         </button>
       </div>
 
-      <form action="#" className="my-3 flex items-center gap-1">
+      <form action="#" className="my-3 flex items-center gap-2">
         <Link href="/">
           <svg
             width="24"
@@ -56,7 +56,7 @@ const NavSearch: React.FC = () => {
         <input
           type="text"
           placeholder="شهر مورد نظر را جست‌وجو کنید"
-          className="text-lg placeholder:text-gray-11 w-full outline-0"
+          className="text-xs sm:text-lg placeholder:text-gray-10 sm:placeholder:text-gray-11 w-full outline-0"
         />
       </form>
     </div>
