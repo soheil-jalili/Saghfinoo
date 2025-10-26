@@ -10,6 +10,7 @@
 @theme {
   --color-primary: #cb1b1b;
   --color-primary-shade3: #871212;
+  --color-gray-1: #fafafa;
   --color-gray-2: #f9f9f9;
   --color-gray-3: #ededed;
   --color-gray-4: #e1e1e1;
@@ -34,6 +35,14 @@
 @utility container {
   @apply mx-auto max-w-[1224px];
 }
+
+/* @media only screen and (max-width: 640px) {
+ body {
+  .hero__section {
+    height: 215px;
+  }
+ }
+} */
 
 .primary__btn {
   @apply w-full bg-primary rounded-lg text-center p-4 cursor-pointer text-white text-sm font-medium-shabnam font-medium;
