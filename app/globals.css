@@ -7,6 +7,14 @@
   max-width: 100%;
 }
 
+@media only screen and (max-width: 640px) {
+  .hero__section {
+    background: url("/assets/images/hero_mobile.png") no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+}
+
 @theme {
   --color-primary: #cb1b1b;
   --color-primary-shade3: #871212;
