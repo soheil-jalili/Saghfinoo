@@ -7,7 +7,7 @@ const Features: React.FC = () => {
     <section className="container">
       <Title
         title="سقفینو چطور به خانه‌دار شدن شما کمک می‌کند"
-        className="mt-26 mb-8"
+        className="px-4 mt-14 sm:mt-26 mb-5 sm:mb-8"
       />
       <div className="grid grid-cols-3 gap-6">
         <FeatureItem

@@ -16,7 +16,7 @@ const News: React.FC = () => {
     <section className="container mb-26">
       <Title
         title="آخرین اخبار املاک را از سقفینو دنبال کنید"
-        className="mt-26 mb-8"
+        className="sm:mt-26 mb-8"
       />
 
       <div className="relative">
