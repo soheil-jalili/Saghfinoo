@@ -16,7 +16,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         openMenu ? "right-0" : "-right-full"
       } transition-all flex flex-col justify-between`}
     >
-      <div className="">
+      <div>
         <button
           className="flex mr-auto cursor-pointer px-4 pt-10 pb-2"
           onClick={() => setOpenMenu(false)}

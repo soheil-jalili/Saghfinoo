@@ -54,6 +54,10 @@
   @apply w-full bg-primary rounded-lg text-center p-4 cursor-pointer text-white text-sm font-medium-shabnam font-medium;
 }
 
+#services__swiper .swiper-wrapper {
+  padding-bottom : 1rem;
+}
+
 @font-face {
   font-family: Shabnam;
   src: url("/assets/fonts/Shabnam.woff2") format("woff2"),

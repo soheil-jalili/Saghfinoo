@@ -24,36 +24,25 @@ const Estate: React.FC = () => {
           335: {
             slidesPerView: 1.3,
           },
-          489: {
-            slidesPerView: 1.6,
+          428: {
+            slidesPerView: 1.8,
           },
 
-          642: {
-            slidesPerView: 1.9,
+          580: {
+            slidesPerView: 2,
           },
-          734: {
-            slidesPerView: 2.2,
-          },
-          825: {
-            slidesPerView: 2.5,
+          700: {
+            slidesPerView: 2.3,
           },
           917: {
             slidesPerView: 2.8,
           },
 
-          1011: {
+          1000: {
             slidesPerView: 3.1,
           },
 
-          1100: {
-            slidesPerView: 3.4,
-          },
-
-          1195: {
-            slidesPerView: 3.7,
-          },
-
-          1220: {
+          1200: {
             slidesPerView: 4,
           },
         }}

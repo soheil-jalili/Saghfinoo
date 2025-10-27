@@ -6,7 +6,7 @@ const NavSearch: React.FC = () => {
   const [state, setState] = useState<"rent" | "buy">("rent");
 
   return (
-    <div className="bg-white rounded-lg sm:rounded-xl border border-gray-7 w-full sm:w-204  h-auto sm:h-27 px-4 sm:px-7">
+    <div className="bg-white rounded-lg sm:rounded-xl border border-gray-7 w-full md:w-204  h-auto sm:h-27 px-4 md:px-7">
       <div className="grid grid-cols-2 mt-3.5 text-center relative">
         <div className="absolute bottom-0 left-0 w-full h-[1.5px] bg-gray-5"></div>
 

@@ -21,26 +21,26 @@ const Nav: React.FC = () => {
   return (
     <nav
       className={`${
-        sticky ? "w-full top-0 shadow-md" : "container sm:top-10 sm:rounded-2xl"
-      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 sm:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between max-[267px]:px-2`}
+        sticky ? "w-full top-0 shadow-md" : "container md:top-10 md:rounded-2xl"
+      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between max-[267px]:px-2`}
     >
       <HiMiniBars3
-        className="flex sm:hidden cursor-pointer"
+        className="flex md:hidden cursor-pointer"
         size={24}
         onClick={() => setOpenMenu(true)}
       />
 
-      <Link href="/" className="sm:ml-10">
+      <Link href="/" className="md:ml-10">
         <Image
           src="/assets/images/logo.png"
           alt="Saghfinoo Logo"
           width={131}
           height={63}
-          className="w-18 h-[35px] sm:w-[131px] sm:h-[63]"
+          className="w-18 h-[35px] md:w-[131px] md:h-[63]"
         />
       </Link>
 
-      <ul className="hidden sm:flex items-center gap-6 ml-auto hover:*:text-gray-11 transition-all">
+      <ul className="hidden md:flex items-center gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
           <Link href="/rent">اجاره</Link>
         </li>
@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
       <div className="flex items-center gap-9 max-[267px]:hidden">
         <Link
           href="/signin"
-          className="hidden sm:block text-base hover:text-gray-11 transition-all"
+          className="hidden md:block text-base hover:text-gray-11 transition-all"
         >
           ورود
         </Link>

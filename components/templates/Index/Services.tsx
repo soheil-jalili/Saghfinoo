@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import ServiceItem from "./ServiceItem";
 // Import Swiper React components
@@ -19,22 +19,21 @@ const Services: React.FC = () => {
       </div>
 
       <Swiper
+        id="services__swiper"
         className="mySwiper px-4!"
-        spaceBetween={16}
+        spaceBetween={128}
         slidesPerView={1}
         breakpoints={{
           400: {
             slidesPerView: 1.5,
+            spaceBetween: 16,
+          },
+
+          500: {
+            slidesPerView: 2,
+            spaceBetween: 16,
           },
           700: {
-            slidesPerView: 1.8,
-          },
-
-          900: {
-            slidesPerView: 2.4,
-          },
-
-          1100: {
             slidesPerView: 3,
           },
         }}
