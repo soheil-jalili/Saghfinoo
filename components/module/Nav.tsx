@@ -30,7 +30,7 @@ const Nav: React.FC = () => {
         onClick={() => setOpenMenu(true)}
       />
 
-      <Link href="/" className="md:ml-10">
+      <Link href="/" className="ml-5 lg:ml-10">
         <Image
           src="/assets/images/logo.png"
           alt="Saghfinoo Logo"
@@ -40,7 +40,7 @@ const Nav: React.FC = () => {
         />
       </Link>
 
-      <ul className="hidden md:flex items-center gap-6 ml-auto hover:*:text-gray-11 transition-all">
+      <ul className="hidden md:flex items-center gap-4 lg:gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
           <Link href="/rent">اجاره</Link>
         </li>
@@ -58,7 +58,7 @@ const Nav: React.FC = () => {
         </li>
       </ul>
 
-      <div className="flex items-center gap-9 max-[267px]:hidden">
+      <div className="flex items-center gap-4 lg:gap-9 max-[267px]:hidden">
         <Link
           href="/signin"
           className="hidden md:block text-base hover:text-gray-11 transition-all"

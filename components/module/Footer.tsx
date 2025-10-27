@@ -21,7 +21,7 @@ export default Footer;
 
 const FooterTitle: React.FC = () => {
   return (
-    <h3 className="text-gray-12 text-[32px] pt-12 text-center font-bold font-bold-shabnam pb-10.5">
+    <h3 className="text-gray-12 text-base md:text-[32px] pt-12 md:text-center font-bold font-bold-shabnam pb-4 md:pb-10.5">
       سقفینو؛ سقفی ایده‌آل برای زندگی
     </h3>
   );
@@ -30,7 +30,7 @@ const FooterTitle: React.FC = () => {
 const TopFooter: React.FC = () => {
   return (
     <>
-      <div className="flex justify-between pb-6 max-w-262 mx-auto">
+      <div className="px-4 xl:px-0 flex justify-between pb-6 max-w-262 mx-auto">
         <div>
           <p className="text-sm text-gray-11 mb-2">بازارهای املاک و مستغلات</p>
 
@@ -220,7 +220,7 @@ const TopFooter: React.FC = () => {
 
 const BottomFooter: React.FC = () => {
   return (
-    <div className="flex items-start justify-between pt-6 max-w-262 mx-auto h-[258px]">
+    <div className="px-4 xl:px-0 flex items-start justify-between pt-6 max-w-262 mx-auto h-[258px]">
       <div>
         <Image
           src="/assets/images/footer/footer_logo.png"
@@ -337,7 +337,7 @@ const BottomFooterImage: React.FC = () => {
 
 const CopyRightFooter = () => {
   return (
-    <div className="py-8 bg-gray-3 text-center text-xs text-gray-8">
+    <div className="hidden md:block py-8 bg-gray-3 text-center text-xs text-gray-8">
       <p>حقوق این سایت متعلق به سقفینو است</p>
     </div>
   );
