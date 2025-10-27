@@ -13,7 +13,7 @@ const Estate: React.FC = () => {
     <section className="container">
       <Title
         title="در سقفینو دنبال چه نوع ملکی هستید"
-        className="mt-12 sm:mt-22 mb-5 sm:mb-8 px-4 md:px-0"
+        className="mt-12 sm:mt-22 mb-5 sm:mb-8 px-4"
       />
 
       <Swiper
@@ -52,6 +52,7 @@ const Estate: React.FC = () => {
             image="/assets/images/estate/image1.png"
             price="28.900"
             title="خانه مسکونی"
+            routeTitle="/"
           />
         </SwiperSlide>
 
@@ -60,6 +61,7 @@ const Estate: React.FC = () => {
             image="/assets/images/estate/image2.png"
             price="309.798"
             title="آپارتمان و برج"
+            routeTitle="/"
           />
         </SwiperSlide>
 
@@ -68,6 +70,7 @@ const Estate: React.FC = () => {
             image="/assets/images/estate/image3.png"
             price="946"
             title="ویلا"
+            routeTitle="/"
           />
         </SwiperSlide>
 
@@ -76,6 +79,7 @@ const Estate: React.FC = () => {
             image="/assets/images/estate/image4.png"
             price="27.339"
             title="تجاری و اداری"
+            routeTitle="/"
           />
         </SwiperSlide>
       </Swiper>

@@ -13,10 +13,10 @@ import "swiper/css/navigation";
 
 const News: React.FC = () => {
   return (
-    <section className="container mb-26">
+    <section className="container mb-14 lg:mb-26">
       <Title
         title="آخرین اخبار املاک را از سقفینو دنبال کنید"
-        className="sm:mt-26 mb-8"
+        className="md:mt-26 mb-5 md:mb-8 px-4"
       />
 
       <div className="relative">
@@ -25,15 +25,22 @@ const News: React.FC = () => {
             nextEl: ".next__icon",
           }}
           modules={[Navigation]}
-          className="mySwiper"
-          spaceBetween={24}
-          slidesPerView={4}
+          className="mySwiper px-4!"
+          spaceBetween={16}
+          slidesPerView={1.3}
+          breakpoints={{
+            900: {
+              spaceBetween: 24,
+              slidesPerView: 4,
+            },
+          }}
         >
           <SwiperSlide>
             <MainCard
               image="/assets/images/news/image1.png"
               title="رکود بازار مسکن؛فروشندگان در انتظار خریداران و خریداران در انتظار شکست نرخ فروشندگان"
               titleClass="px-5"
+              routeTitle="/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -41,6 +48,7 @@ const News: React.FC = () => {
               image="/assets/images/news/image2.png"
               title="خطر ویرانی زلزله در آسمان‌خراش‌ها بیشتر است یا در آپارتمان‌های کم‌ارتفاع و یا خانه‌های"
               titleClass="px-5"
+              routeTitle="/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -48,6 +56,7 @@ const News: React.FC = () => {
               image="/assets/images/news/image3.png"
               title="بازار کساد کسب و کار معماران داخلی در پی بالا رفتن قیمت مواد و متریال اولیه و مصالح خارجی"
               titleClass="px-5"
+              routeTitle="/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -55,6 +64,7 @@ const News: React.FC = () => {
               image="/assets/images/news/image4.png"
               title="شهرک ساحلی زمزم در منطقه نور استان مازندران از سوم شهریور وارد بازار مزایده شده است. "
               titleClass="px-5"
+              routeTitle="/"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -62,11 +72,12 @@ const News: React.FC = () => {
               image="/assets/images/news/image3.png"
               title="بازار کساد کسب و کار معماران داخلی در پی بالا رفتن قیمت مواد و متریال اولیه و مصالح خارجی"
               titleClass="px-5"
+              routeTitle="/"
             />
           </SwiperSlide>
         </Swiper>
 
-        <div className="next__icon absolute top-1/2 -translate-y-1/2 -left-10 w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-lg cursor-pointer z-10 hover:bg-gray-100 transition">
+        <div className="hidden next__icon absolute top-1/2 -translate-y-1/2 left-0 w-16 h-16 rounded-full md:flex items-center justify-center bg-white shadow-lg cursor-pointer z-10 hover:bg-gray-100 transition">
           <svg
             width="11"
             height="22"

@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
     <nav
       className={`${
         sticky ? "w-full top-0 shadow-md" : "container md:top-10 md:rounded-2xl"
-      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between max-[267px]:px-2`}
+      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-8 transition-all duration-300 justify-between max-[267px]:px-2`}
     >
       <HiMiniBars3
         className="flex md:hidden cursor-pointer"
