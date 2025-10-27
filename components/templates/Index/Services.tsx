@@ -1,32 +1,65 @@
+'use client'
 import React from "react";
 import ServiceItem from "./ServiceItem";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
 const Services: React.FC = () => {
   return (
-    <section className="container mt-22">
-      <div className="text-center mb-10">
-        <p className="text-gray-12 text-[32px] font-medium font-medium-shabnam">
+    <section className="container mt-12 md:mt-22">
+      <div className="text-center mb-5 md:mb-10">
+        <p className="text-gray-12 text-sm md:text-[32px] font-medium-shabnam!">
           همه به شما مشاوره می‌دهند!
         </p>
-        <p className="text-gray-11 text-2xl">
+        <p className="text-gray-11 text-xs md:text-2xl">
           اما در سقفینو مشاوران املاک کِنار شما می‌مانند
         </p>
       </div>
 
-      <div className="grid grid-cols-[repeat(3,184px)] justify-center gap-32">
-        <ServiceItem
-          image="/assets/images/services/image1.png"
-          title="امکان خرید و اجاره ملک در اکثر نقاط کشور"
-        />
-        <ServiceItem
-          image="/assets/images/services/image2.png"
-          title="مقایسه و بررسی صدها ملک براحتی و در کمترین زمان "
-        />
-        <ServiceItem
-          image="/assets/images/services/image3.png"
-          title="ارتباط آسان با برترین املاک و مشاورین کشور"
-        />
-      </div>
+      <Swiper
+        className="mySwiper px-4!"
+        spaceBetween={16}
+        slidesPerView={1}
+        breakpoints={{
+          400: {
+            slidesPerView: 1.5,
+          },
+          700: {
+            slidesPerView: 1.8,
+          },
+
+          900: {
+            slidesPerView: 2.4,
+          },
+
+          1100: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        <SwiperSlide>
+          <ServiceItem
+            image="/assets/images/services/image1.png"
+            title="امکان خرید و اجاره ملک در اکثر نقاط کشور"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <ServiceItem
+            image="/assets/images/services/image2.png"
+            title="مقایسه و بررسی صدها ملک براحتی و در کمترین زمان "
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <ServiceItem
+            image="/assets/images/services/image3.png"
+            title="ارتباط آسان با برترین املاک و مشاورین کشور"
+          />
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 };

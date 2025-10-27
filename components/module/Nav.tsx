@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
     <nav
       className={`${
         sticky ? "w-full top-0 shadow-md" : "container sm:top-10 sm:rounded-2xl"
-      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 sm:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between`}
+      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 sm:h-[115px] *:text-gray-10 px-8 transition-all duration-300 justify-between max-[267px]:px-2`}
     >
       <HiMiniBars3
         className="flex sm:hidden cursor-pointer"
@@ -58,7 +58,7 @@ const Nav: React.FC = () => {
         </li>
       </ul>
 
-      <div className="flex items-center gap-9">
+      <div className="flex items-center gap-9 max-[267px]:hidden">
         <Link
           href="/signin"
           className="hidden sm:block text-base hover:text-gray-11 transition-all"

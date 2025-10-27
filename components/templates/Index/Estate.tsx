@@ -22,27 +22,27 @@ const Estate: React.FC = () => {
         slidesPerView={1}
         breakpoints={{
           335: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.3,
           },
           489: {
-            slidesPerView: 1.8,
+            slidesPerView: 1.6,
           },
 
           642: {
-            slidesPerView: 2.1,
+            slidesPerView: 1.9,
           },
           734: {
-            slidesPerView: 2.4,
+            slidesPerView: 2.2,
           },
           825: {
-            slidesPerView: 2.7,
+            slidesPerView: 2.5,
           },
           917: {
-            slidesPerView: 3,
+            slidesPerView: 2.8,
           },
 
           1011: {
-            slidesPerView: 3.3,
+            slidesPerView: 3.1,
           },
 
           1100: {

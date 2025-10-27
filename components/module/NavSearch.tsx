@@ -56,7 +56,7 @@ const NavSearch: React.FC = () => {
         <input
           type="text"
           placeholder="شهر مورد نظر را جست‌وجو کنید"
-          className="text-xs sm:text-lg placeholder:text-gray-10 sm:placeholder:text-gray-11 w-full outline-0"
+          className="max-[267px]:text-[10px] max-[238px]:placeholder:text-transparent text-xs sm:text-lg placeholder:text-gray-10 sm:placeholder:text-gray-11 w-full outline-0"
         />
       </form>
     </div>
