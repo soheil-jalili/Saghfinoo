@@ -29,6 +29,14 @@ const News: React.FC = () => {
           spaceBetween={16}
           slidesPerView={1.3}
           breakpoints={{
+            500: {
+              slidesPerView: 2,
+            },
+
+            768: {
+              slidesPerView: 2.5,
+            },
+
             900: {
               spaceBetween: 24,
               slidesPerView: 4,

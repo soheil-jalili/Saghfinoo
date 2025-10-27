@@ -21,9 +21,12 @@ export default Footer;
 
 const FooterTitle: React.FC = () => {
   return (
-    <h3 className="text-gray-12 text-base md:text-[32px] pt-12 md:text-center font-bold font-bold-shabnam pb-4 md:pb-10.5">
-      سقفینو؛ سقفی ایده‌آل برای زندگی
-    </h3>
+    <div className="px-4 lg:px-0">
+      <h3 className="text-gray-12 text-base sm:text-[32px] pt-12 sm:text-center font-bold font-bold-shabnam pb-4 md:pb-10.5">
+        سقفینو؛ سقفی ایده‌آل برای زندگی
+      </h3>
+      <p className="text-gray-11 text-xs mt-1 max-[360px]:block hidden">تجربه لذت خانه‌دار شدن آنی و آسان</p>
+    </div>
   );
 };
 
