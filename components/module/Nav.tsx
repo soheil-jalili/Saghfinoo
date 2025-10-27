@@ -67,7 +67,7 @@ const Nav: React.FC = () => {
         </Link>
         <Link
           href="/add-post"
-          className="border border-primary px-4 py-2 rounded-lg text-primary text-xs sm:text-sm !font-medium-shabnam"
+          className="border border-primary px-4 py-2 rounded-lg text-primary text-xs sm:text-sm font-medium-shabnam!"
         >
           ثبت آگهی
         </Link>

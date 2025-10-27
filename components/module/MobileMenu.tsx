@@ -12,7 +12,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 }: MobileMenuProps) => {
   return (
     <div
-      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 ${openMenu ?  'right-0'  :  'right-[-100%]' } transition-all`}
+      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 ${openMenu ?  'right-0'  :  '-right-full' } transition-all`}
     >
       <button
         className="flex mr-auto cursor-pointer px-4 pt-10 pb-2"
@@ -62,7 +62,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
           />
         </svg>
 
-        <Link href="/" className="!font-medium-shabnam text-xs">
+        <Link href="/" className="font-medium-shabnam! text-xs">
           ورود یا ثبت‌نام
         </Link>
       </div>
@@ -91,7 +91,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                   fill="#505050"
                 />
               </svg>
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 ثبت آگهی
               </span>
             </Link>
@@ -144,7 +144,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                 />
               </svg>
 
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 اجاره خانه
               </span>
             </Link>
@@ -185,7 +185,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                 />
               </svg>
 
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 خرید خانه
               </span>
             </Link>
@@ -233,7 +233,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                   fill="#505050"
                 />
               </svg>
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 املاک و مستغلات
               </span>
             </Link>
@@ -286,7 +286,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                 />
               </svg>
 
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 مشاورین املاک
               </span>
             </Link>
@@ -335,7 +335,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
                 />
               </svg>
 
-              <span className="text-xs !font-bold-shabnam text-gray-10">
+              <span className="text-xs font-bold-shabnam! text-gray-10">
                 اخبار روز
               </span>
             </Link>

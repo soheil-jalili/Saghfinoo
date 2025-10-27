@@ -48,7 +48,7 @@ const TopFooter: React.FC = () => {
             <li>
               <Link
                 href={"/"}
-                className="flex items-center gap-1 *:!text-primary-shade3"
+                className="flex items-center gap-1 *:text-primary-shade3!"
               >
                 <span>مشاهده بیشتر</span>
                 <svg
@@ -85,7 +85,7 @@ const TopFooter: React.FC = () => {
             <li>
               <Link
                 href={"/"}
-                className="flex items-center gap-1 *:!text-primary-shade3"
+                className="flex items-center gap-1 *:text-primary-shade3!"
               >
                 <span>مشاهده بیشتر</span>
                 <svg
@@ -124,7 +124,7 @@ const TopFooter: React.FC = () => {
             <li>
               <Link
                 href={"/"}
-                className="flex items-center gap-1 *:!text-primary-shade3"
+                className="flex items-center gap-1 *:text-primary-shade3!"
               >
                 <span>مشاهده بیشتر</span>
                 <svg
@@ -145,7 +145,7 @@ const TopFooter: React.FC = () => {
         </div>
 
         <div>
-          <p className="text-sm !font-medium-shabnam text-gray-11 mb-2">
+          <p className="text-sm font-medium-shabnam! text-gray-11 mb-2">
             با ما در ارتباط باشید
           </p>
 
@@ -240,7 +240,7 @@ const BottomFooter: React.FC = () => {
       </div>
 
       <div>
-        <p className="text-gray-11 text-sm mb-2 !font-medium-shabnam">خدمات</p>
+        <p className="text-gray-11 text-sm mb-2 font-medium-shabnam!">خدمات</p>
         <ul className="text-xs text-gray-9 flex flex-col gap-1">
           <li>
             <Link href="/">اجاره</Link>
@@ -267,7 +267,7 @@ const BottomFooter: React.FC = () => {
       </div>
 
       <div>
-        <p className="text-gray-11 text-sm mb-2 !font-medium-shabnam">
+        <p className="text-gray-11 text-sm mb-2 font-medium-shabnam!">
           اطلاعات
         </p>
         <ul className="text-xs text-gray-9 flex flex-col gap-1">
@@ -296,7 +296,7 @@ const BottomFooter: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-1 h-full">
-        <p className="text-gray-11 text-sm mb-2 !font-medium-shabnam">
+        <p className="text-gray-11 text-sm mb-2 font-medium-shabnam!">
           حساب کاربری
         </p>
         <ul className="text-xs text-gray-9 flex flex-col gap-1">
