@@ -29,8 +29,7 @@ const Nav: React.FC = () => {
         size={24}
         onClick={() => setOpenMenu(true)}
       />
-
-      <Link href="/" className="ml-5 lg:ml-10">
+      <Link href="/" className="md:ml-5  lg:ml-10">
         <Image
           src="/assets/images/logo.png"
           alt="Saghfinoo Logo"

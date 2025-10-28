@@ -6,10 +6,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-2">
       <div className="container">
+        <FooterMobileLogo className="sm:hidden pt-12 mr-4" />
         <FooterTitle />
-        <TopFooter />
-        <div className="border-b border-b-gray-5"></div>
-        <BottomFooter />
+        <FooterLinkMobile  className="sm:hidden"  />
+        <FooterParagraphMobile className="sm:hidden" />
+        <TopFooter className="hidden" />
+        <div className="sm:border-b sm:border-b-gray-5"></div>
+        <BottomFooter className="max-sm:hidden" />
         <BottomFooterImage />
       </div>
       <CopyRightFooter />
@@ -19,21 +22,63 @@ const Footer: React.FC = () => {
 
 export default Footer;
 
+type FooterMobileLogo = {
+  className: string
+}
+const FooterMobileLogo: React.FC<FooterMobileLogo> = ({ className }: FooterMobileLogo) => {
+  return <>
+    <Image src={'/assets/images/Logo.png'} width={64} height={31} alt="Saghfinoo Logo" className={`${className}`} />
+  </>
+}
+
 const FooterTitle: React.FC = () => {
   return (
     <div className="px-4 lg:px-0">
-      <h3 className="text-gray-12 text-base sm:text-[32px] pt-12 sm:text-center font-bold font-bold-shabnam pb-4 md:pb-10.5">
+      <h3 className="text-gray-12 text-base sm:text-[32px] pt-4 sm:pt-12 sm:text-center font-bold font-bold-shabnam pb-1 sm:pb-10.5">
         سقفینو؛ سقفی ایده‌آل برای زندگی
       </h3>
-      <p className="text-gray-11 text-xs mt-1 max-[360px]:block hidden">تجربه لذت خانه‌دار شدن آنی و آسان</p>
+      <p className="text-gray-11 text-xs mt-1 max-sm:block hidden">تجربه لذت خانه‌دار شدن آنی و آسان</p>
     </div>
   );
 };
 
-const TopFooter: React.FC = () => {
+type FooterLinkMobileMobileType = {
+  className: string
+}
+
+const FooterLinkMobile: React.FC<FooterLinkMobileMobileType> = ({className}) => {
+  return <div className={`flex gap-[83px] text-[10px] px-4 pt-4 text-gray-11 mb-[29px] ${className}`}>
+    <Link href={'/'}>بیشترین جست‌وجوها</Link>
+    <Link href={'/'}>بازارهای املاک و مستغلات</Link>
+  </div>
+}
+
+
+type FooterParagraphMobileType = {
+  className: string
+}
+
+
+const FooterParagraphMobile: React.FC<FooterParagraphMobileType> = ({ className }: FooterParagraphMobileType) => {
+  return <p className={`text-gray-9 text-[10px] px-4 line-clamp-3 ${className}`}>
+    سقفینو پلی است تا به سرعت در بین هزاران آگهی ثبت‌شده جست‌وجو کنید.
+    ملک مورد نظر را پیدا کنید و برای انجام معامله‌ای مطمئن، با مشاورین املاک معتمد و متخصص شهرتان در ارتباط باشید.
+  </p>
+}
+
+
+
+
+
+
+type TopFooterType = {
+  className?: string
+}
+
+const TopFooter: React.FC<TopFooterType> = ({ className }: TopFooterType) => {
   return (
     <>
-      <div className="px-4 xl:px-0 flex justify-between pb-6 max-w-262 mx-auto">
+      <div className={`px-4 xl:px-0 flex justify-between pb-6 max-w-262 mx-auto ${className}`}>
         <div>
           <p className="text-sm text-gray-11 mb-2">بازارهای املاک و مستغلات</p>
 
@@ -220,10 +265,12 @@ const TopFooter: React.FC = () => {
     </>
   );
 };
-
-const BottomFooter: React.FC = () => {
+type BottomFooterType = {
+  className?: string
+}
+const BottomFooter: React.FC<BottomFooterType> = ({ className }: BottomFooterType) => {
   return (
-    <div className="px-4 xl:px-0 flex items-start justify-between pt-6 max-w-262 mx-auto h-[258px]">
+    <div className={`px-4 xl:px-0 flex items-start justify-between pt-6 max-w-262 mx-auto h-[258px] ${className}`}>
       <div>
         <Image
           src="/assets/images/footer/footer_logo.png"
@@ -333,7 +380,7 @@ const BottomFooterImage: React.FC = () => {
       alt="Footer Illustration"
       width={736}
       height={123}
-      className="mx-auto mt-[50px]"
+      className="mx-auto mt-[50px] max-sm:px-4 max-sm:w-81 max-sm:h-15"
     />
   );
 };
