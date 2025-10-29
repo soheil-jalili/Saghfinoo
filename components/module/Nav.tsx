@@ -21,15 +21,15 @@ const Nav: React.FC = () => {
   return (
     <nav
       className={`${
-        sticky ? "w-full top-0 shadow-md" : "container md:top-10 md:rounded-2xl"
-      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-8 transition-all duration-300 justify-between max-[267px]:px-2 `}
+        sticky ? "w-full! top-0 shadow-md" : "container w-full md:top-10 md:rounded-2xl"
+      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 transition-all duration-300 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
     >
       <HiMiniBars3
         className="flex md:hidden cursor-pointer"
         size={24}
         onClick={() => setOpenMenu(true)}
       />
-      <Link href="/" className="md:ml-5  lg:ml-10">
+      <Link href="/" className="ml-0 md:ml-3 lg:ml-10">
         <Image
           src="/assets/images/logo.png"
           alt="Saghfinoo Logo"
@@ -39,7 +39,7 @@ const Nav: React.FC = () => {
         />
       </Link>
 
-      <ul className="hidden md:flex items-center gap-4 lg:gap-6 ml-auto hover:*:text-gray-11 transition-all">
+      <ul className="hidden md:flex items-center gap-4 md:gap-3 lg:gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
           <Link href="/rent">اجاره</Link>
         </li>
@@ -66,7 +66,7 @@ const Nav: React.FC = () => {
         </Link>
         <Link
           href="/add-post"
-          className="border border-primary px-4 py-2 rounded-lg text-primary text-xs sm:text-sm font-medium-shabnam!"
+          className="border border-primary px-4 py-2  rounded-lg text-primary text-xs sm:text-sm font-medium-shabnam!"
         >
           ثبت آگهی
         </Link>
