@@ -85,7 +85,7 @@ const News: React.FC = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="hidden next__icon absolute top-1/2 -translate-y-1/2 left-0 w-16 h-16 rounded-full md:flex items-center justify-center bg-white shadow-lg cursor-pointer z-10 hover:bg-gray-100 transition">
+        <div className="hidden next__icon absolute top-1/2 -translate-y-1/2 left-2.5 lg:left-0 w-16 h-16 rounded-full md:flex items-center justify-center bg-white shadow-lg cursor-pointer z-10 hover:bg-gray-100 transition">
           <svg
             width="11"
             height="22"

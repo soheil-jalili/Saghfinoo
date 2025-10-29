@@ -33,8 +33,17 @@ const Services: React.FC = () => {
             slidesPerView: 2,
             spaceBetween: 16,
           },
-          700: {
+
+
+          900: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          },
+
+          1000: {
             slidesPerView: 3,
+            spaceBetween: 128
+
           },
         }}
       >
