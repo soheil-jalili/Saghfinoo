@@ -6,7 +6,7 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import MobileMenu from "./MobileMenu";
 import LoginBack from "./LoginBack";
 
-const Nav: React.FC = () => {
+const Nav: React.FC =  () => {
   const [sticky, setSticky] = useState(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [isOpenLoginModel, setIsOpenLoginModel] = useState<boolean>(false);
@@ -23,10 +23,11 @@ const Nav: React.FC = () => {
   const openLoginHandler = () => {
     setIsOpenLoginModel(true);
   };
-  
+
   const closeLoginHandler = () => {
     setIsOpenLoginModel(false);
   };
+
 
   return (
     <nav
@@ -86,7 +87,10 @@ const Nav: React.FC = () => {
       </div>
 
       <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <LoginBack show={isOpenLoginModel} closeLoginHandler={closeLoginHandler}  />
+      <LoginBack
+        show={isOpenLoginModel}
+        closeLoginHandler={closeLoginHandler}
+      />
     </nav>
   );
 };

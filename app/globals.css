@@ -28,7 +28,7 @@
   --color-gray-11: #353535;
   --color-gray-12: #212121;
   --color-service-black: #0c0c0c;
-  --color-info-input: #2F80ED;
+  --color-info-input: #2f80ed;
   --color-info-input-back: #d7eafc;
 
   --font-regular-shabnam: Shabnam;
@@ -56,9 +56,12 @@
 .primary__btn {
   @apply w-full bg-primary rounded-lg text-center p-4 cursor-pointer text-white text-sm font-medium-shabnam font-medium;
 }
+.login__register__input {
+  @apply w-full border border-info-input p-4 outline-0 rounded-lg mb-4 focus:shadow-input;
+}
 
 #services__swiper .swiper-wrapper {
-  padding-bottom : 1rem;
+  padding-bottom: 1rem;
 }
 
 @font-face {

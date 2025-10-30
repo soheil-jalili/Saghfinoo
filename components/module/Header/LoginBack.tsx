@@ -14,12 +14,9 @@ const LoginBack: React.FC<LoginBackType> = ({
   return (
     <div
       className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center"
-      onClick={closeLoginHandler} 
+      onClick={closeLoginHandler}
     >
-      <div
-        onClick={(e) => e.stopPropagation()} 
-        className="rounded-2xl"
-      >
+      <div onClick={(e) => e.stopPropagation()} className="rounded-2xl">
         <Login />
       </div>
     </div>
