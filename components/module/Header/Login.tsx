@@ -13,14 +13,14 @@ const Login: React.FC = () => {
         </p>
         <input
           type="text"
-          className="w-full border border-info-input p-4 outline-0 rounded-lg mb-4"
+          className="w-full border border-info-input p-4 outline-0 rounded-lg mb-4 focus:shadow-input"
         />
       </div>
       <div className="flex items-center gap-1">
         <input
           type="checkbox"
           name="accept-rule"
-            className="appearance-none w-6 h-6 border border-gray-400 rounded-lg checked:bg-info-input checked:border-info-input checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMi41TDMuNSA3TDIgNS41IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPg==')] checked:bg-center checked:bg-no-repeat checked:bg-contain"
+          className="appearance-none w-6 h-6 border border-gray-400 rounded-lg checked:bg-info-input checked:border-info-input checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMi41TDMuNSA3TDIgNS41IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPg==')] checked:bg-center checked:bg-no-repeat checked:bg-contain"
         />
         <p className="text-gray-8 text-sm">
           با <span className="text-primary">قوانین سقفینو</span> موافق هستم
