@@ -2,7 +2,6 @@
 
 import React, { useRef, useState } from "react";
 import LoginBox from "./LoginBox";
-import { GoClock } from "react-icons/go";
 import AcceptCode from "./AcceptCode";
 
 const Login: React.FC = () => {

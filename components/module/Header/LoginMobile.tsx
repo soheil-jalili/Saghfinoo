@@ -1,6 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import AcceptRule from "./AcceptRule";
+"use client";
+
+import React, { useState } from "react";
+import LoginMobileBox from "./LoginMobileBox";
+import AcceptCodeMobile from "./AcceptCodeMobile";
 
 type LoginType = {
   showLoginModel: boolean;
@@ -11,59 +13,25 @@ const LoginMobile: React.FC<LoginType> = ({
   closeLoginHandler,
   showLoginModel,
 }) => {
+  const [openCode, setCodeOpen] = useState<boolean>(false);
+  const signupHandler = () => {
+    setCodeOpen(true);
+  };
+
   return (
     <div
       className={`md:hidden fixed transition-all bg-white inset-0 w-full ${
         showLoginModel ? "right-0" : "right-full"
       }`}
     >
-      <div className="flex flex-col justify-center items-center px-4 pt-4">
-        <button
-          className="mr-auto cursor-pointer mb-4"
-          onClick={closeLoginHandler}
-        >
-          <svg
-            className="w-6 h-6"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"
-              fill="#505050"
-            />
-            <path
-              d="M9.17035 15.58C8.98035 15.58 8.79035 15.51 8.64035 15.36C8.35035 15.07 8.35035 14.59 8.64035 14.3L14.3004 8.64C14.5904 8.35 15.0704 8.35 15.3604 8.64C15.6504 8.93 15.6504 9.41 15.3604 9.7L9.70035 15.36C9.56035 15.51 9.36035 15.58 9.17035 15.58Z"
-              fill="#505050"
-            />
-            <path
-              d="M14.8304 15.58C14.6404 15.58 14.4504 15.51 14.3004 15.36L8.64035 9.7C8.35035 9.41 8.35035 8.93 8.64035 8.64C8.93035 8.35 9.41035 8.35 9.70035 8.64L15.3604 14.3C15.6504 14.59 15.6504 15.07 15.3604 15.36C15.2104 15.51 15.0204 15.58 14.8304 15.58Z"
-              fill="#505050"
-            />
-          </svg>
-        </button>
-        <Image
-          src={"/assets/images/Logo.png"}
-          width={140}
-          height={56}
-          alt="Saghfinoo Logo"
-          className="mb-16"
+      {openCode ? (
+        <AcceptCodeMobile />
+      ) : (
+        <LoginMobileBox
+          closeLoginHandler={closeLoginHandler}
+          signupHandler={signupHandler}
         />
-
-        <p className="text-gray-12 text-xl font-bold-shabnam! mb-[63px]">
-          ورود / ثبت نام
-        </p>
-        <p className="text-sm text-gray-11 mb-10">
-          لطفا برای ورود یا ثبت نام شماره موبایل خود را وارد کنید
-        </p>
-
-        <input type="text" className="login__register__input" />
-      </div>
-
-      <div className="px-4">
-        <AcceptRule size='size-4' radius="rounded-sm" />
-        <button className="primary__btn mt-16">ورود</button>
-      </div>
+      )}
     </div>
   );
 };
