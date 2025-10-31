@@ -11,7 +11,6 @@ const Login: React.FC = () => {
     setCodeOpen(true);
   };
 
-
   return (
     <div className="z-50 bg-white w-150 h-103 rounded-2xl p-8">
       {openCode ? <AcceptCode /> : <LoginBox signupHandler={signupHandler} />}

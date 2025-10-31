@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const Services: React.FC = () => {
   return (
-    <section className="container mt-12 md:mt-22">
+    <section className="container my-12 md:mt-22">
       <div className="text-center mb-5 md:mb-10">
         <p className="text-gray-12 text-sm md:text-[32px] font-medium-shabnam!">
           همه به شما مشاوره می‌دهند!
