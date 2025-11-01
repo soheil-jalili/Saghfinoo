@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import LoginMobileBox from "./LoginMobileBox";
 import AcceptCodeMobile from "./AcceptCodeMobile";
 
-type LoginType = {
+type LoginMobileType = {
   showLoginModel: boolean;
   closeLoginHandler: () => void;
 };
 
-const LoginMobile: React.FC<LoginType> = ({
+const LoginMobile: React.FC<LoginMobileType> = ({
   closeLoginHandler,
   showLoginModel,
 }) => {
@@ -20,12 +20,13 @@ const LoginMobile: React.FC<LoginType> = ({
 
   return (
     <div
-      className={`md:hidden fixed transition-all bg-white inset-0 w-full ${
-        showLoginModel ? "right-0" : "right-full"
-      }`}
+      className={`md:hidden fixed transition-all bg-white inset-0 w-full ${showLoginModel ? "right-0" : "right-full"
+        }`}
     >
       {openCode ? (
-        <AcceptCodeMobile />
+        <AcceptCodeMobile
+          closeLoginHandler={closeLoginHandler}
+        />
       ) : (
         <LoginMobileBox
           closeLoginHandler={closeLoginHandler}

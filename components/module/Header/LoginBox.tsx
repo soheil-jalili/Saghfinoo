@@ -18,7 +18,7 @@ const LoginBox: React.FC<LoginBoxType> = ({ signupHandler }) => {
         </p>
         <input type="text" className="login__register__input" />
       </div>
-      <AcceptRule size={'size-6'}  radius="rounded-lg"/>
+      <AcceptRule size={'size-6'}  radius="rounded-lg" id="accept-rule-desktop"/>
 
       <button className="primary__btn mt-17" onClick={signupHandler}>
         ورود

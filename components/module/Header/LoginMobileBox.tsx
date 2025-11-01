@@ -15,7 +15,7 @@ const LoginMobileBox: React.FC<LoginMobileBoxType> = ({
   return (
     <div>
       <div className="flex flex-col justify-center items-center px-4 pt-4">
-        <CloseBtnMobile closeLoginHandler={closeLoginHandler} />
+        <CloseBtnMobile closeLoginHandler={closeLoginHandler} marginRight={true} />
         <Image
           src={"/assets/images/Logo.png"}
           width={140}
@@ -35,7 +35,7 @@ const LoginMobileBox: React.FC<LoginMobileBoxType> = ({
       </div>
 
       <div className="px-4">
-        <AcceptRule size="size-4" radius="rounded-sm" />
+        <AcceptRule size="size-4" radius="rounded-sm" id="accept-rule-mobile" />
         <button className="primary__btn mt-16" onClick={signupHandler}>
           ورود
         </button>

@@ -1,8 +1,8 @@
 import React from "react";
-import { GoClock } from "react-icons/go";
+import AcceptCodeTimer from "./AcceptCodeTimer";
 
 const AcceptCode: React.FC = () => {
-  const acceptCodeHandler = () => {};
+  const acceptCodeHandler = () => { };
   return (
     <div>
       <div className="flex justify-center flex-col items-center">
@@ -16,7 +16,7 @@ const AcceptCode: React.FC = () => {
           ویرایش شماره موبایل
         </button>
 
-        <div className="flex gap-5 mb-4 *:rounded-lg *:outline-0 *:text-center">
+        <div className="flex gap-5 mb-4 *:rounded-lg *:outline-0 *:text-center *:text-[28px] *:text-gray-11">
           <input
             type="number"
             className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
@@ -43,12 +43,9 @@ const AcceptCode: React.FC = () => {
           />
         </div>
       </div>
-      <div className="flex gap-1">
-        <GoClock color="#CBCBCB" />
-        <p className="mb-11 text-gray-6 text-sm">
-          <span className="text-primary">1:59</span> تا دریافت مجدد کد
-        </p>
-      </div>
+
+      <AcceptCodeTimer fontSize="text-sm" />
+
       <button className="primary__btn mb-8" onClick={acceptCodeHandler}>
         تائید
       </button>

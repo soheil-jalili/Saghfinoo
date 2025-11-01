@@ -2,13 +2,15 @@ import React from "react";
 
 type CloseBtnMobileType = {
   closeLoginHandler: () => void;
+  marginRight: boolean
 };
 
 const CloseBtnMobile: React.FC<CloseBtnMobileType> = ({
   closeLoginHandler,
+  marginRight
 }) => {
   return (
-    <button className="mr-auto cursor-pointer mb-4" onClick={closeLoginHandler}>
+    <button className={`cursor-pointer mb-4 ${marginRight && 'mr-auto'}`} onClick={closeLoginHandler}>
       <svg
         className="w-6 h-6"
         viewBox="0 0 24 24"
