@@ -3,6 +3,7 @@ import CloseBtnMobile from "./CloseBtnMobile";
 import { GoArrowRight } from "react-icons/go";
 import Image from "next/image";
 import AcceptCodeTimer from "./AcceptCodeTimer";
+import LoginInputMobile from "./LoginInputMobile";
 
 type AcceptCodeMobileType = {
   closeLoginHandler: () => void
@@ -32,14 +33,8 @@ const AcceptCodeMobile: React.FC<AcceptCodeMobileType> = ({ closeLoginHandler })
           </button>
         </div>
 
+        <LoginInputMobile />
 
-        <div className="flex gap-5 *:text-center mb-4 w-full justify-between">
-          <input type="number" className="h-12 rounded-lg border border-gray-7 w-[49.6px] outline-0  focus:border-info-input focus:shadow-input text-gray-10 text-2xl" />
-          <input type="number" className="h-12 rounded-lg border border-gray-7 w-[49.6px] outline-0  focus:border-info-input focus:shadow-input text-gray-10 text-2xl" />
-          <input type="number" className="h-12 rounded-lg border border-gray-7 w-[49.6px] outline-0  focus:border-info-input focus:shadow-input text-gray-10 text-2xl" />
-          <input type="number" className="h-12 rounded-lg border border-gray-7 w-[49.6px] outline-0  focus:border-info-input focus:shadow-input text-gray-10 text-2xl" />
-          <input type="number" className="h-12 rounded-lg border border-gray-7 w-[49.6px] outline-0  focus:border-info-input focus:shadow-input text-gray-10 text-2xl" />
-        </div>
       </div>
       <AcceptCodeTimer fontSize="text-[10px]" />
       <button className="primary__btn">تائید</button>

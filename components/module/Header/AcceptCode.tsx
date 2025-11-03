@@ -1,5 +1,6 @@
 import React from "react";
 import AcceptCodeTimer from "./AcceptCodeTimer";
+import LoginInput from "./LoginInput";
 
 const AcceptCode: React.FC = () => {
   const acceptCodeHandler = () => { };
@@ -16,32 +17,8 @@ const AcceptCode: React.FC = () => {
           ویرایش شماره موبایل
         </button>
 
-        <div className="flex gap-5 mb-4 *:rounded-lg *:outline-0 *:text-center *:text-[28px] *:text-gray-11">
-          <input
-            type="number"
-            className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
-          />
+        <LoginInput />
 
-          <input
-            type="number"
-            className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
-          />
-
-          <input
-            type="number"
-            className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
-          />
-
-          <input
-            type="number"
-            className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
-          />
-
-          <input
-            type="number"
-            className="appearance-none w-[91.2px] h-12 border border-gray-7 focus:shadow-input [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-outer-spin-button]:m-0 [-moz-appearance:textfield]"
-          />
-        </div>
       </div>
 
       <AcceptCodeTimer fontSize="text-sm" />

@@ -5,8 +5,9 @@ import React, { useEffect, useState } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
 import MobileMenu from "./MobileMenu";
 import LoginBack from "./LoginBack";
+import { usePathname } from "next/navigation";
 
-const Nav: React.FC =  () => {
+const Nav: React.FC = () => {
   const [sticky, setSticky] = useState(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [isOpenLoginModel, setIsOpenLoginModel] = useState<boolean>(false);
@@ -28,14 +29,14 @@ const Nav: React.FC =  () => {
     setIsOpenLoginModel(false);
   };
 
+  const path = usePathname()
 
   return (
     <nav
-      className={`${
-        sticky
-          ? "w-full! top-0 shadow-md"
-          : "container w-full md:top-10 md:rounded-2xl"
-      } bg-white flex items-center fixed left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 transition-all duration-300 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
+      className={`${sticky && path === '/'
+        ? "w-full! top-0 shadow-md"
+        : "container md:top-10 md:rounded-2xl"
+        } ${path !== '/' ? 'bg-gray-2' : 'bg-white'} flex items-center ${path === '/' ? 'fixed' : 'relative'} left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 transition-all duration-300 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
     >
       <HiMiniBars3
         className="flex md:hidden cursor-pointer"
@@ -87,7 +88,7 @@ const Nav: React.FC =  () => {
       </div>
 
       <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      
+
       <LoginBack
         show={isOpenLoginModel}
         closeLoginHandler={closeLoginHandler}
