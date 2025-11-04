@@ -16,7 +16,7 @@ const NotFound: React.FC = () => {
           </p>
         </div>
 
-        <Link href="/" className="primary__btn w-39! text-xs md:text-base md:w-[393px]!">
+        <Link href="/" className="primary__btn w-39! text-xs md:text-sm md:w-[393px]!">
           بازگشت به صفحه اصلی
         </Link>
 
