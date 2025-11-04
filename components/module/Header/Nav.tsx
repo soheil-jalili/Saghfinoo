@@ -34,9 +34,8 @@ const Nav: React.FC = () => {
   return (
     <nav
       className={`${sticky && path === '/'
-        ? "w-full! top-0 shadow-md"
-        : "container md:top-10 md:rounded-2xl"
-        } ${path !== '/' ? 'bg-gray-2' : 'bg-white'} flex items-center ${path === '/' ? 'fixed' : 'relative'} left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 transition-all duration-300 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
+        && "mx-auto top-0 shadow-md"
+        } ${path !== '/' ? 'bg-gray-2' : 'bg-white'} container md:top-10 md:rounded-2xl flex items-center ${path === '/' ? 'fixed' : 'relative'} left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 transition-all duration-300 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
     >
       <HiMiniBars3
         className="flex md:hidden cursor-pointer"
