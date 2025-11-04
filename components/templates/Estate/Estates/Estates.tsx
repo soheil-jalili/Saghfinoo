@@ -1,7 +1,7 @@
 import React from 'react'
 import EstateCard from '../EstateCard/EstateCard'
 
-const EstateMain: React.FC = () => {
+const Estates: React.FC = () => {
     return (
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[repeat(3,392px)] items-center gap-y-2 sm:gap-y-4  gap-x-4 sm:gap-x-6 flex-wrap'>
             {
@@ -14,4 +14,4 @@ const EstateMain: React.FC = () => {
     )
 }
 
-export default EstateMain
+export default Estates

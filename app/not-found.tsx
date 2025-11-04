@@ -15,11 +15,9 @@ const NotFound: React.FC = () => {
             املاک به‌سرعت در حال خرید و فروش و اجاره‌اند، از صفحه اصلی گزینه مورد نظر را جست‌وجو کنید.
           </p>
         </div>
-
-        <Link href="/" className="primary__btn w-39! text-xs md:text-sm md:w-[393px]!">
+        <Link href="/" className="primary__btn w-41! text-xs md:text-sm md:w-[393px]!">
           بازگشت به صفحه اصلی
         </Link>
-
       </div>
     </div>
   );

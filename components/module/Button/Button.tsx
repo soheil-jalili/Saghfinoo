@@ -1,12 +1,12 @@
 import React, { ComponentProps } from 'react'
 
 type Props = ComponentProps<'button'> & {
-
+    variant?: 'solid' | 'outline'
 }
 
-const Button: React.FC<Props> = ({ className, children }: Props) => {
+const Button: React.FC<Props> = ({ className, children, variant = 'solid' }: Props) => {
     return (
-        <button className={`text-white bg-primary text-sm cursor-pointer rounded-lg ${className}`}>{children}</button>
+        <button className={`${variant === 'outline' ? 'border border-primary text-primary' : 'bg-primary text-white'} text-sm cursor-pointer rounded-lg ${className}`}>{children}</button>
     )
 }
 
