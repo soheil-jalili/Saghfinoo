@@ -10,7 +10,7 @@ const Agents: React.FC = () => {
         <div className='container'>
             <TitlePage title='مشاورین املاک' />
             <SearchInputCity />
-            <Agent />
+           
             <CenterWrapper>
                 <Button className='w-58 h-12'>مشاهده بیشتر</Button>
             </CenterWrapper>
