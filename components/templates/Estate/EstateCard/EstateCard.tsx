@@ -1,9 +1,9 @@
-import AgentCardType from '@/types/agent-card'
+import EstateCardType from '@/types/estate-card'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const AgentCard: React.FC<AgentCardType> = ({ icon, agent, location, rate, ad_enable, commentNumber }) => {
+const EstateCard: React.FC<EstateCardType> = ({ icon, agent, location, rate, ad_enable, commentNumber }) => {
     return (
         <div className='flex flex-col items-center justify-center border border-gray-1 shadow-md rounded-2xl py-8 h-[336px]'>
 
@@ -23,4 +23,4 @@ const AgentCard: React.FC<AgentCardType> = ({ icon, agent, location, rate, ad_en
     )
 }
 
-export default AgentCard
+export default EstateCard

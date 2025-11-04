@@ -1,4 +1,4 @@
-type AgentCardType = {
+type EstateCardType = {
   id: string;
   icon: string;
   agent: string;
@@ -8,4 +8,4 @@ type AgentCardType = {
   commentNumber: number;
 };
 
-export default AgentCardType;
+export default EstateCardType;
