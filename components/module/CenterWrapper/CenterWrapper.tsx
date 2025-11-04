@@ -1,0 +1,15 @@
+import React from "react"
+
+
+type Props = {
+    children: React.ReactNode
+}
+const CenterWrapper: React.FC<Props> = ({ children }: Props) => {
+    return (
+        <div className='flex items-center justify-center'>
+            {children}
+        </div>
+    )
+}
+
+export default CenterWrapper
