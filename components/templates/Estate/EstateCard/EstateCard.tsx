@@ -5,7 +5,7 @@ import React from 'react'
 
 const EstateCard: React.FC<EstateCardType> = ({ icon, agent, location, rate, ad_enable, commentNumber }) => {
     return (
-        <div className='flex flex-col items-center justify-center border border-gray-1 shadow-md rounded-2xl py-8 h-[336px]'>
+        <div className='flex flex-col items-center justify-center border border-gray-1 shadow-md rounded-2xl py-4 sm:py-8 h-auto lg:h-[336px] text-center'>
 
             <Image alt={agent} width={96} height={66} src={icon} className='mb-4' />
 

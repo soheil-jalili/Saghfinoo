@@ -2,14 +2,14 @@ import React from 'react'
 
 const SearchInputCity: React.FC = () => {
     return (
-        <form action="#" method='POST' className='rounded-xl border border-gray-7 w-full sm:w-150 h-16 flex items-center pl-4 pr-6 mb-8 gap-2'>
+        <form action="#" method='POST' className='rounded-xl border border-gray-7 w-full lg:w-150 h-16 flex items-center pl-4 pr-6 mb-6 md:mb-8 gap-2' id='search-form-city'>
             <button type='submit'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5 21.75C5.85 21.75 1.25 17.15 1.25 11.5C1.25 5.85 5.85 1.25 11.5 1.25C17.15 1.25 21.75 5.85 21.75 11.5C21.75 17.15 17.15 21.75 11.5 21.75ZM11.5 2.75C6.67 2.75 2.75 6.68 2.75 11.5C2.75 16.32 6.67 20.25 11.5 20.25C16.33 20.25 20.25 16.32 20.25 11.5C20.25 6.68 16.33 2.75 11.5 2.75Z" fill="#505050" />
                     <path d="M22.0014 22.75C21.8114 22.75 21.6214 22.68 21.4714 22.53L19.4714 20.53C19.1814 20.24 19.1814 19.76 19.4714 19.47C19.7614 19.18 20.2414 19.18 20.5314 19.47L22.5314 21.47C22.8214 21.76 22.8214 22.24 22.5314 22.53C22.3814 22.68 22.1914 22.75 22.0014 22.75Z" fill="#505050" />
                 </svg>
             </button>
-            <input type="text" placeholder='شهر مورد نظر را اضافه کنید' className='w-full outline-0 placeholder:text-gray-10 text-base' />
+            <input type="text" placeholder='شهر مورد نظر را اضافه کنید' className='w-full outline-0 placeholder:text-gray-10 text-base max-[385px]:placeholder:text-sm max-[366px]:placeholder:text-transparent' />
 
             <button className='border border-gray-11 rounded-lg flex items-center gap-[2.5px] mr-auto cursor-pointer h-10 w-auto px-3'>
                 <span>تهران</span>
