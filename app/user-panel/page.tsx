@@ -3,7 +3,7 @@ import React from 'react'
 
 const UserPanel: React.FC = () => {
     return (
-        <section className='container pt-16 pb-26'>
+        <section className='container pt-16 pb-26 md:mt-30'>
             <div className='grid grid-cols-[288px_1fr] gap-6'>
                 <RightPanel />
                 <LeftPanel />

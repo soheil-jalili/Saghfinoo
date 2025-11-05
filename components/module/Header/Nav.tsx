@@ -33,7 +33,7 @@ const Nav: React.FC = () => {
       />
       <Link href="/" className="ml-0 md:ml-3 lg:ml-10">
         <Image
-          src="/assets/images/logo.png"
+          src="/assets/images/Logo.png"
           alt="Saghfinoo Logo"
           width={131}
           height={63}
@@ -43,17 +43,19 @@ const Nav: React.FC = () => {
 
       <ul className="hidden md:flex items-center gap-4 md:gap-3 lg:gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
-          <Link href="/rent">اجاره</Link>
-        </li>
-        <li>
-          <Link href="/buy">خرید</Link>
-        </li>
-        <li>
           <Link href="/estate" className={`${path === '/estate' && 'text-primary border-b border-b-primary pb-1'}`}>املاک و مستغلات</Link>
         </li>
         <li>
           <Link href="/agents" className={`${path === '/agents' && 'text-primary border-b border-b-primary pb-1'}`}>مشاورین املاک</Link>
         </li>
+
+        <li>
+          <Link href="/rent">اجاره</Link>
+        </li>
+        <li>
+          <Link href="/buy">خرید</Link>
+        </li>
+
         <li>
           <Link href="/news" className={`${path === '/news' && 'text-primary border-b border-b-primary pb-1'}`}>اخبار روز</Link>
         </li>

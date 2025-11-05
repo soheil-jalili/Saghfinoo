@@ -2,7 +2,7 @@ import React from 'react'
 
 const News: React.FC = () => {
     return (
-        <div>
+        <div className='md:my-50 container'>
             news
         </div>
     )
