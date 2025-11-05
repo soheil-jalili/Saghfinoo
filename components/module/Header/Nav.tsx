@@ -46,7 +46,7 @@ const Nav: React.FC = () => {
           <Link href="/rent">اجاره</Link>
         </li>
         <li>
-          <Link href="/buy">خرید</Link>
+          <Link href="/buy-house">خرید</Link>
         </li>
         <li>
           <Link href="/estate" className={`${path === '/estate' && 'text-primary border-b border-b-primary pb-1'}`}>املاک و مستغلات</Link>

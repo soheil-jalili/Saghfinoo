@@ -13,9 +13,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 }: MobileMenuProps) => {
   return (
     <div
-      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 ${
-        openMenu ? "right-0" : "-right-full"
-      } transition-all flex flex-col justify-between`}
+      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 ${openMenu ? "right-0" : "-right-full"
+        } transition-all flex flex-col justify-between`}
     >
       <div>
         <button
@@ -49,7 +48,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className="px-4">
           <ul className="flex flex-col gap-6">
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/add-post" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
@@ -90,7 +89,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </li>
 
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/rent" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
@@ -144,7 +143,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </li>
 
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/buy-house" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
@@ -186,7 +185,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </li>
 
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/estate" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
@@ -235,7 +234,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </li>
 
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/agents" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
@@ -289,7 +288,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             </li>
 
             <li className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
+              <Link href="/news" className="flex items-center gap-2">
                 <svg
                   width="20"
                   height="20"
