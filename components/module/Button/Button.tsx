@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { ComponentProps } from 'react'
 
-type Props = ComponentProps<'button'> & {
+type Props = ComponentProps<'a'> & {
     variant?: 'solid' | 'outline',
     route?: string
 }

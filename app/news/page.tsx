@@ -6,10 +6,10 @@ import React from 'react'
 
 const News: React.FC = () => {
     return (
-        <div className='md:my-50 container'>
+        <div className='container'>
             <TitlePage title='اخبار املاک' />
 
-            <section className='bg-gray-2 flex items-center justify-between gap-4 rounded-2xl'>
+            <section className='bg-gray-2 flex items-center justify-between gap-4 rounded-2xl mb-10 sm:mb-14'>
                 <div className='px-8 inline-flex flex-col max-w-145'>
 
 

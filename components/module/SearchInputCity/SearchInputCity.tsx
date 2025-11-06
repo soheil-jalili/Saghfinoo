@@ -11,7 +11,7 @@ const SearchInputCity: React.FC = () => {
             </button>
             <input type="text" placeholder='شهر مورد نظر را اضافه کنید' className='w-full outline-0 placeholder:text-gray-10 text-base max-[385px]:placeholder:text-sm max-[366px]:placeholder:text-transparent' />
 
-            <button className='border border-gray-11 rounded-lg flex items-center gap-[2.5px] mr-auto cursor-pointer h-10 w-auto px-3'>
+            <button className='border border-gray-11 rounded-lg flex items-center gap-3 mr-auto cursor-pointer h-10 w-auto px-3'>
                 <span>تهران</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.0013 18.9583C5.05964 18.9583 1.04297 14.9417 1.04297 9.99999C1.04297 5.05832 5.05964 1.04166 10.0013 1.04166C14.943 1.04166 18.9596 5.05832 18.9596 9.99999C18.9596 14.9417 14.943 18.9583 10.0013 18.9583ZM10.0013 2.29166C5.7513 2.29166 2.29297 5.74999 2.29297 9.99999C2.29297 14.25 5.7513 17.7083 10.0013 17.7083C14.2513 17.7083 17.7096 14.25 17.7096 9.99999C17.7096 5.74999 14.2513 2.29166 10.0013 2.29166Z" fill="#353535" />
