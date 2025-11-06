@@ -5,7 +5,7 @@ import React, { ComponentProps } from 'react'
 
 const UserPanel: React.FC = () => {
     return (
-        <section className='container pt-16 pb-26 md:mt-16'>
+        <section className='container pt-6 md:pt-16 pb-26'>
             <div className='grid grid-cols-[288px_1fr] gap-6'>
                 <RightPanel />
                 <LeftPanel />
