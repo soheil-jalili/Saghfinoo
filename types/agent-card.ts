@@ -4,6 +4,7 @@ type AgentCardType = {
   fullName: string;
   company: string;
   rate: string;
+  route : string,
 };
 
 export default AgentCardType;
