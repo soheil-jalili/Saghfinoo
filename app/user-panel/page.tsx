@@ -5,8 +5,8 @@ import React, { ComponentProps } from "react";
 
 const UserPanel: React.FC = () => {
   return (
-    <section className="max-w-[90%] md:max-w-none container pt-6 md:pt-16 pb-26 ">
-      <div className="grid grid-cols-1 md:grid-cols-[288px_1fr] md:gap-6">
+    <section className="w-[90%] container pt-6 pb-14 md:pt-16 md:pb-26 ">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] md:gap-4 lg:grid-cols-[288px_1fr] lg:gap-6">
         <RightPanel />
         <LeftPanel />
       </div>
@@ -19,7 +19,7 @@ export default UserPanel;
 const RightPanel: React.FC = () => {
   return (
     <div className="md:flex flex-col gap-2 hidden">
-      <div className="border  border-gray-5 rounded-xl flex pr-[25px] gap-2 items-center py-6">
+      <div className="border border-gray-5 rounded-xl flex pr-[25px] gap-2 items-center py-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
@@ -180,11 +180,11 @@ const LeftPanel: React.FC = () => {
   return (
     <div className="border border-gray-5 rounded-2xl">
       <div>
-        <h4 className="text-gray-11 text-2xl font-bold-shabnam! px-6 pt-8 pb-6.5">
+        <h4 className="text-gray-11 text-xs sm:text-2xl font-bold-shabnam! px-6 pt-6 sm:pt-8 pb-10 sm:pb-6.5">
           ویرایش اطلاعات
         </h4>
 
-        <div className="pb-4  md:pr-[97px]">
+        <div className="flex justify-center md:block pb-4 md:pr-6 lg:pr-[97px]">
           <div className="border border-gray-7 rounded-lg  w-[105px] h-[105px] flex items-center justify-center relative">
             <svg
               width="68"
@@ -236,8 +236,8 @@ const LeftPanel: React.FC = () => {
           </div>
         </div>
 
-        <div className="px-4 md:pr-[97px] flex flex-wrap gap-3 *:border *:rounded-xl *:py-[19px] *:px-3 mb-11.5 *:flex *:gap-3">
-          <div className="w-[351px] border border-gray-7">
+        <div className="flex flex-wrap gap-3 px-4 md:px-6 lg:px-[97px] *:border *:rounded-sm sm:*:rounded-xl *:py-3 md:*:py-[19px] *:px-3 mb-16.5 sm:mb-11.5 *:flex *:gap-3  *:w-full *:lg:w-[351px]">
+          <div className="border border-gray-7">
             <svg
               width="20"
               height="20"
@@ -259,10 +259,10 @@ const LeftPanel: React.FC = () => {
             <input
               type="text"
               placeholder="نام و نام خانوادگی خود را وارد کنید"
-              className="w-full outline-0 "
+              className="w-full outline-0 text-[10px] font-bold-shabnam! md:text-sm md:font-medium-shabnam!"
             />
           </div>
-          <div className="w-[351px] border border-gray-7">
+          <div className="border border-gray-7">
             <svg
               width="20"
               height="20"
@@ -279,10 +279,10 @@ const LeftPanel: React.FC = () => {
             <input
               type="text"
               placeholder="شماره موبایل خود را وارد کنید"
-              className="w-full outline-0 "
+              className="w-full outline-0 text-[10px] font-bold-shabnam! md:text-sm md:font-medium-shabnam!"
             />
           </div>
-          <div className="w-[351px] border border-gray-7">
+          <div className="border border-gray-7">
             <svg
               width="20"
               height="20"
@@ -304,10 +304,10 @@ const LeftPanel: React.FC = () => {
             <input
               type="text"
               placeholder="ایمیل خود را وارد کنید (اختیاری)"
-              className="w-full outline-0 "
+              className="w-full outline-0 text-[10px] font-bold-shabnam! md:text-sm md:font-medium-shabnam!"
             />
           </div>
-          <div className="w-[351px] border border-gray-7">
+          <div className="border border-gray-7">
             <svg
               width="20"
               height="20"
@@ -333,7 +333,7 @@ const LeftPanel: React.FC = () => {
             <input
               type="password"
               placeholder="رمز عبور را وارد کنید"
-              className="w-full outline-0 "
+              className="w-full outline-0 text-[10px] font-bold-shabnam! md:text-sm md:font-medium-shabnam!"
             />
 
             <svg
@@ -357,8 +357,11 @@ const LeftPanel: React.FC = () => {
         </div>
       </div>
 
-      <div className="block md:flex gap-4 md:pb-[33px] justify-end md:pl-[97px]">
-        <MainButton variant="outline" className="w-full md:w-[131px] h-10">
+      <div className="block md:flex md:gap-4 pb-10 md:pb-[33px] justify-end lg:pl-[97px] px-4 md:px-6">
+        <MainButton
+          variant="outline"
+          className="w-full mb-2.5 md:mb-0 md:w-[131px] h-10"
+        >
           انصراف
         </MainButton>
         <MainButton variant="solid" className="w-full md:w-32.5 h-10">
