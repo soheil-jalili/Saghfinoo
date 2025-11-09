@@ -10,7 +10,6 @@ const Estates: React.FC = () => {
                 })
             }
         </div>
-
     )
 }
 
