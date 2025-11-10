@@ -45,6 +45,8 @@ const RightPanel: React.FC = () => {
 
       <div className="border border-gray-5 rounded-xl px-6 pb-8.5">
         <div className="flex gap-2 py-4">
+         
+            {/* absolute before:content-[''] before:absolute before:bg-primary before:w-1.5 before:h-[23px] before:rounded-lg before:pl-2 */}
           <svg
             width="20"
             height="20"
@@ -66,7 +68,9 @@ const RightPanel: React.FC = () => {
             />
           </svg>
 
-          <span className="text-sm text-gray-11">ویرایش اطلاعات</span>
+          <span className="text-sm text-gray-11">
+            ویرایش اطلاعات
+          </span>
         </div>
 
         <div className="flex gap-2 py-4">
@@ -185,7 +189,7 @@ const LeftPanel: React.FC = () => {
         </h4>
 
         <div className="flex justify-center md:block pb-4 md:pr-6 lg:pr-[97px]">
-          <div className="border border-gray-7 rounded-lg  w-[105px] h-[105px] flex items-center justify-center relative">
+          <div className="border border-gray-7 rounded-lg  w-[105px] h-[105px] flex items-center justify-center relative -z-50">
             <svg
               width="68"
               height="68"
