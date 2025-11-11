@@ -17,33 +17,16 @@ const Services: React.FC = () => {
           اما در سقفینو مشاوران املاک کِنار شما می‌مانند
         </p>
       </div>
-
+      {/* Responseive for the less than 798 */}
       <Swiper
         id="services__swiper"
-        className="mySwiper px-4!"
-        spaceBetween={128}
+        className="mySwiper px-4! md:w-202"
+        spaceBetween={16}
         slidesPerView={1}
         breakpoints={{
-          400: {
-            slidesPerView: 1.5,
-            spaceBetween: 16,
-          },
-
-          500: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-          },
-
-
-          900: {
-            slidesPerView: 2.5,
-            spaceBetween: 20
-          },
-
           1000: {
             slidesPerView: 3,
-            spaceBetween: 128
-
+            spaceBetween: 128,
           },
         }}
       >

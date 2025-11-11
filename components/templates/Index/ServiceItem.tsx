@@ -11,7 +11,7 @@ const ServiceItem: React.FC<ServiceItemType> = ({
   title,
 }: ServiceItemType) => {
   return (
-    <div className="h-58 bg-white overflow-hidden rounded-2xl flex flex-col justify-center items-center gap-2 py-6 px-4 shadow-md">
+    <div className="h-58 bg-white overflow-hidden rounded-2xl flex flex-col justify-center items-center gap-2 py-6 px-4 shadow-md w-46">
       <Image src={image} alt={title} width={62.19} height={80} />
       <p className="text-lg text-service-black font-regular-shabnam text-center mt-2 max-w-[152px] line-clamp-3">
         {title}
