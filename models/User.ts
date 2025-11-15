@@ -24,6 +24,10 @@ const schema = mongoose.Schema({
     default: "USER",
   },
 
+  isAccept: {
+    type: Boolean,
+    default: false,
+  },
   refreshToken: String,
 });
 

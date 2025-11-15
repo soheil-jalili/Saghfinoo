@@ -24,7 +24,7 @@ export const POST = async (request: NextRequest) => {
     // Save with expiration
     await OtpModel.create({
       phone,
-      code: hashed, // or code if you don't want to hash
+      code: hashed, 
       expiresAt: new Date(Date.now() + 2 * 60 * 1000),
       attempts: 0,
     });
