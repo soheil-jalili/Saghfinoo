@@ -21,9 +21,24 @@ const Services: React.FC = () => {
       <Swiper
         id="services__swiper"
         className="mySwiper px-4! md:w-202"
-        spaceBetween={16}
         slidesPerView={1}
+        spaceBetween={16}
         breakpoints={{
+          350: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          
+          400: {
+            slidesPerView: 2.5,
+            spaceBetween: 16,
+          },
+          
+
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
           1000: {
             slidesPerView: 3,
             spaceBetween: 128,
