@@ -134,6 +134,6 @@ div > .nav__active > svg {
   fill: var(--color-gray-11) !important;
   margin-right: 8px;
 }
-div > .nav__active > a {
+div > .nav__active > span {
   color: var(--color-gray-11) !important;
 }
