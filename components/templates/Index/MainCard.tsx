@@ -18,7 +18,7 @@ const MainCard: React.FC<MainCardItemType> = ({
   routeTitle,
 }: MainCardItemType) => {
   return (
-    <div className="h-auto lg:h-85 bg-gray-2 rounded-lg overflow-hidden outline -outline-offset-1 outline-gray-4">
+    <div className="h-auto lg:h-85 bg-gray-2 rounded-lg overflow-hidden outline -outline-offset-1 outline-gray-4 min-[1100px]:h-auto!">
       <Image
         src={image}
         alt={title}
