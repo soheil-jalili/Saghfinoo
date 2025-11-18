@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import AcceptRule from "./AcceptRule";
 
 type LoginBoxType = {
@@ -6,6 +7,10 @@ type LoginBoxType = {
 };
 
 const LoginBox: React.FC<LoginBoxType> = ({ signupHandler }) => {
+  const inputLogin = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    inputLogin.current?.focus();
+  }, []);
   return (
     <div>
       <div className="flex justify-center flex-col items-center">
@@ -16,9 +21,18 @@ const LoginBox: React.FC<LoginBoxType> = ({ signupHandler }) => {
         <p className="text-gray-11 text-base mb-6">
           لطفا برای ورود شماره موبایل خود را وارد کنید
         </p>
-        <input type="text" className="login__register__input" />
+        <input
+          type="text"
+          className="login__register__input text-left"
+          dir="ltr"
+          ref={inputLogin}
+        />
       </div>
-      <AcceptRule size={'size-6'}  radius="rounded-lg" id="accept-rule-desktop"/>
+      <AcceptRule
+        size={"size-6"}
+        radius="rounded-lg"
+        id="accept-rule-desktop"
+      />
 
       <button className="primary__btn mt-17" onClick={signupHandler}>
         ورود

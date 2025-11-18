@@ -113,6 +113,7 @@
   }
 }
 
+/* active nav for sidebar */
 .nav__active {
   position: relative;
 }
