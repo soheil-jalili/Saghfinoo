@@ -26,16 +26,25 @@ const Services: React.FC = () => {
         spaceBetween={16}
         breakpoints={{
           350: {
-            slidesPerView: 1.7,
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+          },
+          400: {
+            slidesPerView: 1.8,
+            spaceBetween: 16,
+          },
+          500: {
+            slidesPerView: 2.1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView:3,
             spaceBetween: 16,
           },
 
-          500: {
-            slidesPerView: 2.5,
-          },
-
-          560: {
+          996: {
             slidesPerView: 3,
+            spaceBetween: 128,
           },
         }}
       >

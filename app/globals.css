@@ -61,9 +61,16 @@
   @apply w-full border border-info-input p-4 outline-0 rounded-lg mb-4 focus:shadow-input;
 }
 
+/* start services */
 #services__swiper .swiper-wrapper {
   padding-bottom: 1rem;
 }
+
+/* #services__swiper .swiper-slide {
+  margin-left: 0;
+} */
+ 
+/* end services */
 
 @font-face {
   font-family: Shabnam;
