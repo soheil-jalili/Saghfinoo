@@ -18,10 +18,13 @@ const NotAdvertisement: React.FC = () => {
         <p className="mb-2 sm:mb-1 font-bold-shabnam! text-xl sm:text-2xl text-gray-10">
           هنوز آگهی‌ای ثبت نکردید!
         </p>
-        <p className="mb-8 text-sm sm:text-xl  text-gray-9">
+        <p className="mb-8 text-sm md:text-lg lg:text-xl  text-gray-9 max-lg:px-4.5 text-center">
           با ثبت رایگان آگهی هر جا که هستید به‌سرعت ملک‌تان را معامله کنید
         </p>
-        <Button className="w-69.5 h-10 mb-24 sm:mb-11" onClick={() => {}}>
+        <Button
+          className="w-39 h-8 sm:w-69.5 sm:h-10 mb-24 sm:mb-11"
+          onClick={() => {}}
+        >
           ثبت آگهی
         </Button>
       </div>
