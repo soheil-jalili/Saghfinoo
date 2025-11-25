@@ -30,16 +30,16 @@ const Services: React.FC = () => {
             spaceBetween: 16,
           },
           400: {
-            slidesPerView: 1.8,
+            slidesPerView: 2,
             spaceBetween: 16,
           },
           500: {
-            slidesPerView: 2.1,
+            slidesPerView:2.5,
             spaceBetween: 16,
           },
           768: {
             slidesPerView:3,
-            spaceBetween: 16,
+            spaceBetween: 3,
           },
 
           996: {
