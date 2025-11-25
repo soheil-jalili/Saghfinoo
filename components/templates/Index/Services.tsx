@@ -21,7 +21,7 @@ const Services: React.FC = () => {
       {/* Responseive for the less than 798 */}
       <Swiper
         id="services__swiper"
-        className="mySwiper px-4! md:w-202"
+        className="mySwiper px-4! lg:w-202"
         slidesPerView={1}
         spaceBetween={16}
         breakpoints={{
@@ -30,16 +30,16 @@ const Services: React.FC = () => {
             spaceBetween: 16,
           },
           400: {
-            slidesPerView: 1.8,
+            slidesPerView: 2,
             spaceBetween: 16,
           },
           500: {
-            slidesPerView: 2.1,
+            slidesPerView:2.5,
             spaceBetween: 16,
           },
           768: {
             slidesPerView:3,
-            spaceBetween: 16,
+            spaceBetween: 3,
           },
 
           996: {
