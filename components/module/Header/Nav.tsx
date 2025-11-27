@@ -11,7 +11,6 @@ const Nav: React.FC = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [isOpenLoginModel, setIsOpenLoginModel] = useState<boolean>(false);
 
-
   const openLoginHandler = () => {
     setIsOpenLoginModel(true);
   };
@@ -20,11 +19,15 @@ const Nav: React.FC = () => {
     setIsOpenLoginModel(false);
   };
 
-  const path = usePathname()
+  const path = usePathname();
 
   return (
     <nav
-      className={`mx-auto top-0 ${path !== '/' ? 'bg-gray-2 md:mt-10' : 'bg-white md:top-10'} container md:rounded-2xl flex items-center ${path === '/' ? 'absolute' : 'static'} left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
+      className={`mx-auto top-0 ${
+        path !== "/" ? "bg-gray-2 md:mt-10" : "bg-white md:top-10"
+      } container md:rounded-2xl flex items-center ${
+        path === "/" ? "absolute" : "static"
+      } left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
     >
       <HiMiniBars3
         className="flex md:hidden cursor-pointer"
@@ -43,19 +46,57 @@ const Nav: React.FC = () => {
 
       <ul className="hidden md:flex items-center gap-4 md:gap-3 lg:gap-6 ml-auto hover:*:text-gray-11 transition-all">
         <li>
-          <Link href="/rent">اجاره</Link>
+          <Link
+            href="/rent"
+            className={`${
+              path === "/rent" && "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            اجاره
+          </Link>
         </li>
         <li>
-          <Link href="/buy-house">خرید</Link>
+          <Link
+            href="/buy-house"
+            className={`${
+              path === "/buy-house" &&
+              "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            خرید
+          </Link>
         </li>
         <li>
-          <Link href="/estate" className={`${path === '/estate' && 'text-primary border-b border-b-primary pb-1'}`}>املاک و مستغلات</Link>
+          <Link
+            href="/estate"
+            className={`${
+              path === "/estate" &&
+              "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            املاک و مستغلات
+          </Link>
         </li>
         <li>
-          <Link href="/agents" className={`${path === '/agents' && 'text-primary border-b border-b-primary pb-1'}`}>مشاورین املاک</Link>
+          <Link
+            href="/agents"
+            className={`${
+              path === "/agents" &&
+              "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            مشاورین املاک
+          </Link>
         </li>
         <li>
-          <Link href="/news" className={`${path === '/news' && 'text-primary border-b border-b-primary pb-1'}`}>اخبار روز</Link>
+          <Link
+            href="/news"
+            className={`${
+              path === "/news" && "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            اخبار روز
+          </Link>
         </li>
       </ul>
 
