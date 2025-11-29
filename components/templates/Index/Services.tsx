@@ -41,11 +41,10 @@ const Services: React.FC = () => {
         breakpoints={{
           350: {
             slidesPerView: 1.7,
-            spaceBetween: 32,
+            spaceBetween: 16,
           },
           420: {
             slidesPerView: 2,
-            spaceBetween: 16,
           },
           500: {
             slidesPerView: 2.3,
@@ -53,6 +52,7 @@ const Services: React.FC = () => {
 
           540: {
             slidesPerView: 2.7,
+            spaceBetween: 16,
           },
         }}
       >
