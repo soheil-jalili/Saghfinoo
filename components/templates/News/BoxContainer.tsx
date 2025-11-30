@@ -4,7 +4,7 @@ type BoxContainerType = PropsWithChildren<{
 }>
 const BoxContainer: React.FC<BoxContainerType> = ({ children, className = '' }: BoxContainerType) => {
     return (
-        <div className={`bg-gray-3 rounded-lg p-1 mb-6 max-w-28 ${className}`}>
+        <div className={`bg-gray-3 rounded-lg p-1 mb-4 lg:mb-6 max-w-28 ${className}`}>
             {children}
         </div>
     )
