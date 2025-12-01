@@ -18,33 +18,42 @@ const Services: React.FC = () => {
           اما در سقفینو مشاوران املاک کِنار شما می‌مانند
         </p>
       </div>
-      {/* Responseive for the less than 798 */}
+      
+      <div className="max-[640]:hidden flex items-center justify-center px-4 md:px-0 sm:gap-10  md:gap-20 lg:gap-32">
+        <ServiceItem
+          image="/assets/images/services/image1.png"
+          title="امکان خرید و اجاره ملک در اکثر نقاط کشور"
+        />
+        <ServiceItem
+          image="/assets/images/services/image2.png"
+          title="مقایسه و بررسی صدها ملک براحتی و در کمترین زمان "
+        />
+        <ServiceItem
+          image="/assets/images/services/image3.png"
+          title="ارتباط آسان با برترین املاک و مشاورین کشور"
+        />
+      </div>
+
       <Swiper
         id="services__swiper"
-        className="mySwiper px-4! lg:w-202"
+        className="mySwiper px-4! min-[640]:hidden!"
         slidesPerView={1}
         spaceBetween={16}
         breakpoints={{
           350: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.7,
             spaceBetween: 16,
           },
-          400: {
+          420: {
             slidesPerView: 2,
-            spaceBetween: 16,
           },
           500: {
-            slidesPerView:2.5,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView:3,
-            spaceBetween: 3,
+            slidesPerView: 2.3,
           },
 
-          996: {
-            slidesPerView: 3,
-            spaceBetween: 128,
+          540: {
+            slidesPerView: 2.7,
+            spaceBetween: 16,
           },
         }}
       >

@@ -3,7 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const NavSearch: React.FC = () => {
-  const [state, setState] = useState<"rent" | "buy">("rent");
+  const [state, setState] = useState<"rent" | "buy-house">("rent");
+  const [searchInput, setSearchInput] = useState<string>("");
 
   return (
     <div className="bg-white rounded-lg sm:rounded-xl border border-gray-7 w-full md:w-[90%] lg:w-204  h-auto sm:h-27 px-4 md:px-7">
@@ -22,9 +23,9 @@ const NavSearch: React.FC = () => {
         </button>
 
         <button
-          onClick={() => setState("buy")}
+          onClick={() => setState("buy-house")}
           className={`pb-2 text-sm sm:text-2xl relative transition-all duration-200 cursor-pointer  ${
-            state === "buy"
+            state === "buy-house"
               ? "text-gray-12 font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary"
               : "text-gray-9 hover:text-gray-11"
           }`}
@@ -33,8 +34,8 @@ const NavSearch: React.FC = () => {
         </button>
       </div>
 
-      <form action="#" className="my-3 flex items-center gap-2">
-        <Link href="/">
+      <div className="my-3 flex items-center gap-2">
+        <Link href={`/${state}?search=${searchInput}`}>
           <svg
             width="24"
             height="24"
@@ -54,11 +55,13 @@ const NavSearch: React.FC = () => {
         </Link>
 
         <input
+          value={searchInput}
+          onChange={(event) => setSearchInput(event.target.value)}
           type="text"
           placeholder="شهر مورد نظر را جست‌وجو کنید"
           className="max-[267px]:text-[10px] max-[238px]:placeholder:text-transparent text-xs sm:text-lg placeholder:text-gray-10 sm:placeholder:text-gray-11 w-full outline-0"
         />
-      </form>
+      </div>
     </div>
   );
 };
