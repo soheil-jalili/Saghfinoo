@@ -5,7 +5,7 @@ import BoxContainer from "./BoxContainer";
 
 const MainNewsItem: React.FC = () => {
   return (
-    <section className="bg-gray-2 flex items-center justify-between gap-4 rounded-2xl mb-10 sm:mb-14 flex-wrap flex-col-reverse lg:flex-nowrap lg:flex-row lg:mx-[65px] xl:mx-0">
+    <section className="bg-gray-2 flex items-center justify-between gap-4 rounded-2xl mb-10 sm:mb-14 flex-wrap flex-col-reverse sm:flex-nowrap sm:flex-row sm:mx-4 md:mx-10.5  lg:mx-[65px] xl:mx-0">
       <div className="px-4 lg:px-8 inline-flex flex-col lg:max-w-145">
         <BoxContainer>
           <span className="text-gray-11 text-xs">زمان مطالعه: ۵ دقیقه</span>
@@ -24,7 +24,7 @@ const MainNewsItem: React.FC = () => {
           رغبتی برای خرید این کالای ضروری اما سرمایه‌ای وجود ندارد.
         </p>
 
-        <div className="flex justify-between items-center pb-4 sm:pb-0">
+        <div className="flex justify-between items-start pb-4 sm:pb-0">
           <BoxContainer className="flex items-center gap-2 p-2">
             <svg
               width="24"
@@ -86,7 +86,7 @@ const MainNewsItem: React.FC = () => {
           height={650}
           width={608}
           quality={100}
-          className="lg:rounded-l-2xl w-full h-[481px] lg:w-162.5 lg:h-152"
+          className="sm:rounded-l-2xl w-full h-[481px] lg:w-162.5 lg:h-152"
         />
       </div>
     </section>
