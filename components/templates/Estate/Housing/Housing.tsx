@@ -4,13 +4,9 @@ import React from "react";
 
 const Housing: React.FC = () => {
   return (
-    <div
-      className="mx-4
-      lg:mx-[65px] md:mx-10.5 xl:mx-0"
-    >
+    <div className="mx-4 lg:mx-[65px] md:mx-10.5 xl:mx-0">
       <section
-        className="w-full sm:w-[75%] border border-gray-5 rounded-2xl pb-[19px] sm:pb-[21px]
-    mb-10 sm:mb-14"
+        className="w-full border border-gray-5 rounded-2xl pb-7.5 sm:pb-[21px]"
       >
         <Image
           src={"/assets/images/news/housing.png"}
@@ -20,7 +16,7 @@ const Housing: React.FC = () => {
           className="w-full overflow-hidden rounded-t-2xl"
         />
         <div className="mx-2 sm:mx-4">
-          <Badge className="flex items-center justify-center rounded-lg  mt-[19px] sm:mt-[9px] w-[101px] h-5.5 sm:w-[115px] sm:h-7.5 mb-2  text-[10px] sm:text-xs">
+          <Badge className="mt-[19px] sm:mt-[9px] w-[101px] h-5.5 sm:w-[115px] sm:h-7.5 mb-2">
             <p className="p-1">زمان مطالعه: ۱۰ دقیقه</p>
           </Badge>
           <h4 className="text-gray-11 text-xs sm:text-2xl font-bold-shabnam! mb-2">
