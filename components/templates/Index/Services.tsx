@@ -18,7 +18,7 @@ const Services: React.FC = () => {
           اما در سقفینو مشاوران املاک کِنار شما می‌مانند
         </p>
       </div>
-      
+
       <div className="max-[640]:hidden flex items-center justify-center px-4 md:px-0 sm:gap-10  md:gap-20 lg:gap-32">
         <ServiceItem
           image="/assets/images/services/image1.png"
@@ -41,18 +41,47 @@ const Services: React.FC = () => {
         spaceBetween={16}
         breakpoints={{
           350: {
+            slidesPerView: 1.6,
+            spaceBetween: 16,
+          },
+          375: {
             slidesPerView: 1.7,
             spaceBetween: 16,
           },
+          393: {
+            slidesPerView: 1.8,
+            spaceBetween: 16,
+          },
+
+          400: {
+            slidesPerView: 1.9,
+            spaceBetween: 16,
+          },
+
           420: {
             slidesPerView: 2,
+            spaceBetween: 16,
           },
+
+          460: {
+            slidesPerView: 2.3,
+            spaceBetween: 16,
+          },
+
           500: {
             slidesPerView: 2.3,
           },
 
           540: {
-            slidesPerView: 2.7,
+            slidesPerView: 2.4,
+            spaceBetween: 16,
+          },
+          570: {
+            slidesPerView: 2.5,
+            spaceBetween: 16,
+          },
+          590: {
+            slidesPerView: 2.8,
             spaceBetween: 16,
           },
         }}
