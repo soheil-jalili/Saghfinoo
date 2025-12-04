@@ -26,6 +26,10 @@ const News: React.FC = () => {
           <HousingCard />
         </div>
       </div>
+      <TitlePage
+        title="ساخت و ساز"
+        className="mt-10 sm:mt-14! px-4  md:px-10.5 lg:px-[65px] xl:px-0 text-gray-12"
+      />
     </div>
   );
 };
