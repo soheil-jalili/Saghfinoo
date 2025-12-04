@@ -22,7 +22,7 @@ const News: React.FC = () => {
         className="mt-10 sm:mt-14! px-4  md:px-10.5 lg:px-[65px] xl:px-0"
       />
 
-      <div className="flex justify-between gap-4 flex-wrap sm:flex-nowrap mb-10 sm:mb-14">
+      <div className="flex justify-between gap-4 flex-wrap md:flex-nowrap mb-10 sm:mb-14">
         <Housing />
         <div className="flex flex-col gap-4">
           <HousingCard />
