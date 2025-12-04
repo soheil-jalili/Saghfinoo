@@ -2,12 +2,13 @@ import Badge from "@/components/module/Badge/Badge";
 import Image from "next/image";
 import React from "react";
 
-const Housing: React.FC = () => {
+type Prop = {
+  className?: string;
+};
+const Housing: React.FC<Prop> = ({ className }) => {
   return (
-    <div className="mx-4 lg:mx-[65px] md:mx-10.5 xl:mx-0">
-      <section
-        className="w-full border border-gray-5 rounded-2xl pb-7.5 sm:pb-[21px]"
-      >
+    <div className={`mx-4 md:ml-0 md:mr-10.5 lg:mr-[65px] xl:mx-0 ${className}`}>
+      <section className="w-full border border-gray-5 rounded-2xl pb-7.5 sm:pb-[21px]">
         <Image
           src={"/assets/images/news/housing.png"}
           width={830}

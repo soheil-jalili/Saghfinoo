@@ -55,17 +55,7 @@ const Nav: React.FC = () => {
             اجاره
           </Link>
         </li>
-        <li>
-          <Link
-            href="/buy-house"
-            className={`${
-              path === "/buy-house" &&
-              "text-primary border-b border-b-primary pb-1"
-            }`}
-          >
-            خرید
-          </Link>
-        </li>
+
         <li>
           <Link
             href="/estate"
@@ -96,6 +86,18 @@ const Nav: React.FC = () => {
             }`}
           >
             اخبار روز
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            href="/contact"
+            className={`${
+              path === "/contact" &&
+              "text-primary border-b border-b-primary pb-1"
+            }`}
+          >
+            تماس با ما
           </Link>
         </li>
       </ul>

@@ -1,11 +1,8 @@
-import Button from "@/components/module/Button/Button";
+import React from "react";
 import HousingCard from "@/components/module/HousingCard/HousingCard";
 import TitlePage from "@/components/module/TitlePage/TitlePage";
 import Housing from "@/components/templates/Estate/Housing/Housing";
-import BoxContainer from "@/components/templates/News/BoxContainer";
 import MainNewsItem from "@/components/templates/News/MainNewsItem";
-import Image from "next/image";
-import React from "react";
 
 const News: React.FC = () => {
   return (
@@ -23,8 +20,8 @@ const News: React.FC = () => {
       />
 
       <div className="flex justify-between gap-4 flex-wrap md:flex-nowrap mb-10 sm:mb-14">
-        <Housing />
-        <div className="flex flex-col gap-4">
+        <Housing className="md:flex-1 xl:flex-[2.7]" />
+        <div className="flex flex-col gap-4 md:flex-1 xl:flex-1">
           <HousingCard />
           <HousingCard />
         </div>

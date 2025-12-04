@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HousingCard: React.FC = () => {
   return (
-    <div className="mx-4 lg:mx-[65px] md:mx-10.5 xl:mx-0">
+    <div className="ml-4 md:mr-0 lg:ml-[65px] md:ml-10.5 xl:mx-0">
       <article className="border border-gray-5 rounded-2xl overflow-x-hidden pb-[15px]">
         <Image
           src={"/assets/images/news/housing-card.png"}
