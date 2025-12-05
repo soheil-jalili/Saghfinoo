@@ -3,6 +3,7 @@ import HousingCard from "@/components/module/HousingCard/HousingCard";
 import TitlePage from "@/components/module/TitlePage/TitlePage";
 import Housing from "@/components/templates/Estate/Housing/Housing";
 import MainNewsItem from "@/components/templates/News/MainNewsItem";
+import AdNews from "@/components/templates/News/AdNews";
 
 const News: React.FC = () => {
   return (
@@ -30,6 +31,9 @@ const News: React.FC = () => {
         title="ساخت و ساز"
         className="mt-10 sm:mt-14! px-4  md:px-10.5 lg:px-[65px] xl:px-0 text-gray-12"
       />
+
+      <AdNews />
+
     </div>
   );
 };
