@@ -4,7 +4,7 @@ import React from "react";
 const AdNews: React.FC = () => {
   return (
     <section
-      className="bg-gray-2 rounded-2xl flex flex-col-reverse sm:flex-row sm:items-center justify-between sm:px-8 px-4 gap-8 py-[25.5px] mx-4 md:mx-10.5 lg:mx-[65px] xl:mx-0
+      className="bg-gray-2 rounded-2xl flex flex-col-reverse md:flex-row sm:items-center justify-between sm:px-8 px-4 gap-8 py-[25.5px] mx-4 md:mx-10.5 lg:mx-[65px] xl:mx-0
     "
     >
       <div>
