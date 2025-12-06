@@ -6,7 +6,7 @@ import BoxContainer from "./BoxContainer";
 const MainNewsItem: React.FC = () => {
   return (
     <section className="bg-gray-2 flex items-center justify-between gap-4 rounded-2xl mb-10 sm:mb-14 flex-wrap flex-col-reverse sm:flex-nowrap sm:flex-row sm:mx-4 md:mx-10.5  lg:mx-[65px] xl:mx-0">
-      <div className="px-4 lg:px-8 inline-flex flex-col lg:max-w-145">
+      <div className="px-4 lg:px-8 inline-flex flex-col lg:max-w-145 flex-1">
         <BoxContainer>
           <span className="text-gray-11 text-xs">زمان مطالعه: ۵ دقیقه</span>
         </BoxContainer>
@@ -79,7 +79,7 @@ const MainNewsItem: React.FC = () => {
           <Button className="rounded-lg w-44 h-10">ادامه مطلب</Button>
         </div>
       </div>
-      <div className="w-full">
+      <div className="flex-1">
         <Image
           src={"/assets/images/news/image.png"}
           alt="News Image"

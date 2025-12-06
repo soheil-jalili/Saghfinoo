@@ -7,7 +7,7 @@ import AdNews from "@/components/templates/News/AdNews";
 
 const News: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container overflow-x-hidden">
       <TitlePage
         title="اخبار املاک"
         className="px-4 md:px-10.5 lg:px-[65px] xl:px-0"
@@ -22,7 +22,7 @@ const News: React.FC = () => {
 
       <div className="flex justify-between gap-4 flex-wrap md:flex-nowrap mb-10 sm:mb-14">
         <Housing className="md:flex-1 xl:flex-[2.7]" />
-        <div className="flex flex-col gap-4 md:flex-1 xl:flex-1">
+        <div className="flex flex-col gap-4 md:flex-1 xl:flex-1 w-full">
           <HousingCard />
           <HousingCard />
         </div>
