@@ -4,6 +4,7 @@ import TitlePage from "@/components/module/TitlePage/TitlePage";
 import Housing from "@/components/templates/Estate/Housing/Housing";
 import MainNewsItem from "@/components/templates/News/MainNewsItem";
 import AdNews from "@/components/templates/News/AdNews";
+import BuildCard from "@/components/module/BuildCard/BuildCard";
 
 const News: React.FC = () => {
   return (
@@ -31,6 +32,13 @@ const News: React.FC = () => {
         title="ساخت و ساز"
         className="mt-10 sm:mt-14! px-4 md:px-10.5 lg:px-[65px] xl:px-0 text-gray-12"
       />
+
+      <div className="grid grid-cols-2 mb-22 gap-x-6 gap-y-4 px-4 md:px-10.5 lg:px-[65px] xl:px-0">
+        <BuildCard />
+        <BuildCard />
+        <BuildCard />
+        <BuildCard />
+      </div>
 
       <AdNews />
 
