@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const BuildCard: React.FC = () => {
   return (
-    <div className="flex items-center gap-2 rounded-xl overflow-hidden border border-gray-2 pr-4 h-[235px]">
+    <div className="flex items-center gap-2 rounded-xl overflow-hidden border border-gray-5 pr-4 h-[235px]">
       <div>
         <Badge className="w-[115px] h-7.5 mb-2">
           <p className="p-1">زمان مطالعه: ۴ دقیقه</p>
