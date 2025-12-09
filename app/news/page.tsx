@@ -5,6 +5,7 @@ import Housing from "@/components/templates/Estate/Housing/Housing";
 import MainNewsItem from "@/components/templates/News/MainNewsItem";
 import AdNews from "@/components/templates/News/AdNews";
 import BuildCard from "@/components/module/BuildCard/BuildCard";
+import Pagination from "@/components/module/Pagination/Pagination";
 
 const News: React.FC = () => {
   return (
@@ -73,6 +74,8 @@ const News: React.FC = () => {
           <HousingCard />
         </div>
       </div>
+
+      <Pagination />
     </div>
   );
 };
