@@ -48,7 +48,10 @@ const MainContact: React.FC = () => {
         <p className="text-gray-9 text-xs sm:text-base font-medium-shabnam! mt-0.5 mb-4 sm:mb-1">
           پشتیبانی ۲۴ ساعته
         </p>
-        <button className="bg-primary text-white text-xs sm:text-sm font-medium-shabnam! flex items-center justify-center rounded-lg  gap-2 w-48 h-8 sm:w-95.5 sm:h-12 cursor-pointer">
+        <a
+          href="tel:02141067000"
+          className="bg-primary text-white text-xs sm:text-sm font-medium-shabnam! flex items-center justify-center rounded-lg  gap-2 w-48 h-8 sm:w-95.5 sm:h-12 cursor-pointer"
+        >
           <span>۰۲۱-۴۱۰۶۷۰۰۰</span>
           <svg
             width="16"
@@ -62,7 +65,7 @@ const MainContact: React.FC = () => {
               fill="white"
             />
           </svg>
-        </button>
+        </a>
       </div>
     </>
   );
