@@ -1,10 +1,11 @@
+import FilterRent from "@/components/templates/Rent/FilterRent";
 import React from "react";
 
 const RentPage: React.FC = () => {
   return (
-    <>
-      <h1>rent page</h1>
-    </>
+    <section className="container">
+      <FilterRent />
+    </section>
   );
 };
 
