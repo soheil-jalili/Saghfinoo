@@ -38,7 +38,7 @@ const Housing: React.FC<Prop> = ({
           <Badge className="mt-[19px] sm:mt-[9px] w-[101px] h-5.5 sm:w-[115px] sm:h-7.5 mb-2">
             <p className="p-1">زمان مطالعه: ۱۰ دقیقه</p>
           </Badge>
-          <div className={`${widthTitle !== null ? `w-${widthTitle}` : null} `}>
+          <div className={`${widthTitle !== null ? `w-${widthTitle}` : ""} `}>
             <h4
               className={`text-gray-11 text-xs sm:text-2xl font-bold-shabnam! mb-2`}
             >
