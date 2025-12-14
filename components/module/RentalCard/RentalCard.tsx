@@ -1,0 +1,61 @@
+"use client";
+import Image from "next/image";
+
+type Prop = {
+  title: string;
+  address: string;
+  image: string;
+  date: string;
+  mortgage: string;
+  rentPrice: string;
+};
+
+const RentalCard: React.FC<Prop> = ({
+  title,
+  address,
+  image,
+  mortgage,
+  rentPrice,
+  date,
+}) => {
+  const addToBookmark = () => {};
+  return (
+    <div className="w-39 sm:w-72 h-49 sm:h-[317px] rounded-[10px] sm:rounded-2xl border border-gray-4 overflow-hidden relative">
+      <Image width={288} height={169} alt={title} src={image} />
+
+      <div className="bg-service-black/45 rounded-sm absolute top-2 left-2 sm:top-3 sm:left-3  p-2">
+        <span className="text-[10px] sm:text-base text-white">{date}</span>
+      </div>
+
+      <div className="px-2.5 sm:px-3.5 flex flex-col gap-1 pb-[9px] sm:pb-6">
+        <div className="flex items-center justify-between mt-[9px] sm:mt-2.5">
+          <p className="text-gray-8 text-[10px] sm:text-base">{title}</p>
+          <button onClick={addToBookmark}>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.93006 22.75C4.51006 22.75 4.12006 22.65 3.77006 22.45C3.00006 22 2.56006 21.09 2.56006 19.96V5.86C2.56006 3.32 4.63006 1.25 7.17006 1.25H16.8201C19.3601 1.25 21.4301 3.32 21.4301 5.86V19.95C21.4301 21.08 20.9901 21.99 20.2201 22.44C19.4501 22.89 18.4401 22.84 17.4501 22.29L12.5701 19.58C12.2801 19.42 11.7101 19.42 11.4201 19.58L6.54006 22.29C6.00006 22.59 5.45006 22.75 4.93006 22.75ZM7.18006 2.75C5.47006 2.75 4.07006 4.15 4.07006 5.86V19.95C4.07006 20.54 4.24006 20.98 4.54006 21.15C4.84006 21.33 5.31006 21.27 5.82006 20.98L10.7001 18.27C11.4401 17.86 12.5601 17.86 13.3001 18.27L18.1801 20.98C18.6901 21.27 19.1601 21.33 19.4601 21.15C19.7601 20.97 19.9301 20.53 19.9301 19.95V5.86C19.9301 4.15 18.5301 2.75 16.8201 2.75H7.18006Z"
+                fill="#909090"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <p className="text-[10px] sm:text-base text-gray-10">{address}</p>
+        <h6 className="text-gray-11 font-bold-shabnam! text-[10px] sm:text-base">
+          {mortgage} رهن
+        </h6>
+        <h6 className="text-gray-11 font-bold-shabnam! text-[10px] sm:text-base">
+          {rentPrice} اجاره
+        </h6>
+      </div>
+    </div>
+  );
+};
+
+export default RentalCard;
