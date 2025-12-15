@@ -1,6 +1,14 @@
+"use client";
+
 import SearchInputCity from "@/components/module/SearchInputCity/SearchInputCity";
 import React from "react";
-import SelectBox from "./SelectBoxFilter/SelectBox";
+import dynamic from "next/dynamic";
+
+const SelectBox = dynamic(() => import("./SelectBoxFilter/SelectBox"), {
+  ssr: false,
+});
+
+
 
 const FilterRent: React.FC = () => {
   return (

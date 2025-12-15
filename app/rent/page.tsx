@@ -14,14 +14,13 @@ const RentPage: React.FC = () => {
         <div className="flex-1">
           <TitlePage title="املاک اجاره‌ای" className="mb-2! mt-0!" />
           <div className="flex justify-between mb-2">
-            <p className="text-primary text-sm sm:text-lg sm:block">
+            <p className="text-primary text-sm sm:text-lg hidden sm:block">
               ۴۷.۵۰۷ مورد یافت شد
             </p>
             <p className="text-primary text-sm sm:text-lg sm:hidden">
               ۴۷.۵۰۷ مورد
             </p>
           </div>
-
 
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start">
             <RentalCard
