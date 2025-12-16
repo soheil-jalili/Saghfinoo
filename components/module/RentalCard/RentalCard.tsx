@@ -30,7 +30,7 @@ const RentalCard: React.FC<Prop> = ({
       <div className="px-2.5 sm:px-3.5 flex flex-col gap-1 pb-[9px] sm:pb-6">
         <div className="flex items-center justify-between mt-[9px] sm:mt-2.5">
           <p className="text-gray-8 text-[10px] sm:text-base">{title}</p>
-          <button onClick={addToBookmark}>
+          <button onClick={addToBookmark} className="cursor-pointer">
             <svg
               width="24"
               height="24"
