@@ -22,6 +22,41 @@ const RentPage: React.FC = () => {
             </p>
           </div>
 
+          <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start mb-10 sm:mb-14">
+            <RentalCard
+              image={"/assets/images/rent/rent.png"}
+              title="رهن و اجاره آپارتمان نوساز"
+              address="۹۵ متر، محدوه آزادی خیابان جی"
+              mortgage="250 میلیون تومان"
+              rentPrice="15 میلیون تومان"
+              date={"۱ ساعت پیش"}
+            />
+            <RentalCard
+              image={"/assets/images/rent/rent.png"}
+              title="رهن و اجاره آپارتمان نوساز"
+              address="۹۵ متر، محدوه آزادی خیابان جی"
+              mortgage="250 میلیون تومان"
+              rentPrice="15 میلیون تومان"
+              date={"۱ ساعت پیش"}
+            />
+            <RentalCard
+              image={"/assets/images/rent/rent.png"}
+              title="رهن و اجاره آپارتمان نوساز"
+              address="۹۵ متر، محدوه آزادی خیابان جی"
+              mortgage="250 میلیون تومان"
+              rentPrice="15 میلیون تومان"
+              date={"۱ ساعت پیش"}
+            />
+            <RentalCard
+              image={"/assets/images/rent/rent.png"}
+              title="رهن و اجاره آپارتمان نوساز"
+              address="۹۵ متر، محدوه آزادی خیابان جی"
+              mortgage="250 میلیون تومان"
+              rentPrice="15 میلیون تومان"
+              date={"۱ ساعت پیش"}
+            />
+          </div>
+
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start">
             <RentalCard
               image={"/assets/images/rent/rent.png"}
