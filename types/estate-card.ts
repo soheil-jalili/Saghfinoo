@@ -6,6 +6,7 @@ type EstateCardType = {
   rate: string;
   ad_enable: number;
   commentNumber: number;
+  className ?: string;
 };
 
 export default EstateCardType;
