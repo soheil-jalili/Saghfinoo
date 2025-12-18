@@ -4,6 +4,7 @@ import TitlePage from "@/components/module/TitlePage/TitlePage";
 import EstateCard from "@/components/templates/Estate/EstateCard/EstateCard";
 import EstateRelated from "@/components/templates/Rent/EstateRelated/EstateRelated";
 import FilterRent from "@/components/templates/Rent/FilterRent";
+import RelatedLink from "@/components/templates/Rent/RelatedLink/RelatedLink";
 import Image from "next/image";
 import React from "react";
 import Swiper from "swiper";
@@ -60,7 +61,7 @@ const RentPage: React.FC = () => {
           </div>
 
           <EstateRelated />
-          
+
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start mb-10 sm:mb-14">
             <RentalCard
               image={"/assets/images/rent/rent.png"}
@@ -95,6 +96,8 @@ const RentPage: React.FC = () => {
               date={"۱ ساعت پیش"}
             />
           </div>
+
+          <RelatedLink />
 
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start">
             <RentalCard

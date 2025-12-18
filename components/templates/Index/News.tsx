@@ -20,6 +20,7 @@ const News: React.FC = () => {
       />
 
       <div className="relative">
+        
         <Swiper
           navigation={{
             nextEl: ".next__icon",
