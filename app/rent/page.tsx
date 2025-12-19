@@ -15,7 +15,7 @@ const RentPage: React.FC = () => {
       <div className="flex justify-between gap-x-6 mb-14">
         <div className="flex-1">
           <TitlePage title="املاک اجاره‌ای" className="mb-2! mt-0!" />
-          <div className="flex justify-between mb-5 sm:mb-6">
+          <div className="flex justify-between mb-5 sm:mb-6 place-items-baseline">
             <p className="text-primary text-sm sm:text-lg hidden sm:block">
               ۴۷.۵۰۷ مورد یافت شد
             </p>
