@@ -4,7 +4,7 @@ import SearchInputCity from "@/components/module/SearchInputCity/SearchInputCity
 import React from "react";
 import dynamic from "next/dynamic";
 
-const SelectBox = dynamic(() => import("./SelectBoxFilter/SelectBox"), {
+const SelectBox = dynamic(() => import("../SelectBoxFilter/SelectBox"), {
   ssr: false,
 });
 

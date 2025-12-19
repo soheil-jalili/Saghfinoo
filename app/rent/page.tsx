@@ -1,13 +1,12 @@
 import Pagination from "@/components/module/Pagination/Pagination";
 import RentalCard from "@/components/module/RentalCard/RentalCard";
 import TitlePage from "@/components/module/TitlePage/TitlePage";
-import EstateCard from "@/components/templates/Estate/EstateCard/EstateCard";
 import EstateRelated from "@/components/templates/Rent/EstateRelated/EstateRelated";
-import FilterRent from "@/components/templates/Rent/FilterRent";
+import FilterNewOld from "@/components/templates/Rent/FilterNewOld/FilterNewOld";
+import FilterRent from "@/components/templates/Rent/FilterRent/FilterRent";
 import RelatedLink from "@/components/templates/Rent/RelatedLink/RelatedLink";
 import Image from "next/image";
 import React from "react";
-import Swiper from "swiper";
 
 const RentPage: React.FC = () => {
   return (
@@ -23,6 +22,8 @@ const RentPage: React.FC = () => {
             <p className="text-primary text-sm sm:text-lg sm:hidden">
               ۴۷.۵۰۷ مورد
             </p>
+
+            <FilterNewOld />
           </div>
 
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start mb-10 sm:mb-14">
