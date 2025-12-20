@@ -1,7 +1,7 @@
 import MainButton from "@/components/module/MainButton/MainButton";
 import React from "react";
 
-const Profile = () => {
+const Profile: React.FC = () => {
   return (
     <div className="border border-gray-5 rounded-2xl">
       <div>
