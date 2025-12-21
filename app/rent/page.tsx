@@ -61,6 +61,7 @@ const RentPage: React.FC = () => {
             />
           </div>
 
+
           <EstateRelated />
 
           <div className="flex flex-wrap gap-x-6 gap-y-4 justify-between content-start mb-10 sm:mb-14">

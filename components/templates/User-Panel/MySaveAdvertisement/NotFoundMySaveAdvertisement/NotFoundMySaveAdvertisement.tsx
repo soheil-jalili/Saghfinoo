@@ -4,7 +4,7 @@ import React from "react";
 
 const NotFoundMySaveAdvertisement: React.FC = () => {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center">
       <Image
         alt="not-found"
         src={"/assets/images/user-panel/save-advertisement/rent-not-found.png"}
@@ -24,7 +24,7 @@ const NotFoundMySaveAdvertisement: React.FC = () => {
       <Button className="w-39 h-8 sm:w-71.5 sm:h-10 mb-25.5 sm:mb-9.5">
         املاک اجاره‌ای
       </Button>
-    </>
+    </div>
   );
 };
 
