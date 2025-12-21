@@ -54,27 +54,6 @@ const Sidebar: React.FC = () => {
         </Link>
 
         <Link
-          href="/user-panel/add-advertisement"
-          className={`flex gap-2 py-4 cursor-pointer ${
-            pathname === "/user-panel/add-advertisement" && "nav__active"
-          }`}
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="#717171"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M9.9974 18.9584C5.05573 18.9584 1.03906 14.9417 1.03906 10C1.03906 5.05835 5.05573 1.04169 9.9974 1.04169C14.9391 1.04169 18.9557 5.05835 18.9557 10C18.9557 14.9417 14.9391 18.9584 9.9974 18.9584ZM9.9974 2.29169C5.7474 2.29169 2.28906 5.75002 2.28906 10C2.28906 14.25 5.7474 17.7084 9.9974 17.7084C14.2474 17.7084 17.7057 14.25 17.7057 10C17.7057 5.75002 14.2474 2.29169 9.9974 2.29169Z" />
-            <path d="M13.3307 10.625H6.66406C6.3224 10.625 6.03906 10.3417 6.03906 10C6.03906 9.65833 6.3224 9.375 6.66406 9.375H13.3307C13.6724 9.375 13.9557 9.65833 13.9557 10C13.9557 10.3417 13.6724 10.625 13.3307 10.625Z" />
-            <path d="M10 13.9584C9.65833 13.9584 9.375 13.675 9.375 13.3334V6.66669C9.375 6.32502 9.65833 6.04169 10 6.04169C10.3417 6.04169 10.625 6.32502 10.625 6.66669V13.3334C10.625 13.675 10.3417 13.9584 10 13.9584Z" />
-          </svg>
-
-          <span className="text-sm text-gray-9">ثبت آگهی جدید</span>
-        </Link>
-
-        <Link
           href="/user-panel/my-advertisement"
           className={`flex gap-2 py-4 cursor-pointer ${
             pathname === "/user-panel/my-advertisement" && "nav__active"
@@ -115,7 +94,10 @@ const Sidebar: React.FC = () => {
           <span className="text-sm text-gray-9">آگهی‌های ذخیره‌شده</span>
         </Link>
 
-        <button onClick={logoutHandler} className="flex gap-2 py-4 cursor-pointer">
+        <button
+          onClick={logoutHandler}
+          className="flex gap-2 py-4 cursor-pointer"
+        >
           <svg
             width="20"
             height="20"
