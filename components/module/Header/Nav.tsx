@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
 import MobileMenu from "./MobileMenu";
 import LoginBack from "./LoginBack";
@@ -25,7 +25,9 @@ const Nav: React.FC = () => {
     <nav
       className={`mx-auto top-0 ${
         path !== "/" ? "bg-gray-2 md:mt-10" : "bg-white md:top-10"
-      } container md:rounded-2xl flex items-center ${
+      } container md:rounded-2xl ${
+        path === "/user-admin" ? "hidden" : "flex"
+      } items-center ${
         path === "/" ? "absolute" : "static"
       } left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
     >
