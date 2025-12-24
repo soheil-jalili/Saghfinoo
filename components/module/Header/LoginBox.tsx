@@ -4,16 +4,17 @@ import AcceptRule from "./AcceptRule";
 
 type LoginBoxType = {
   signupHandler: () => void;
+  className?: string;
 };
 
-const LoginBox: React.FC<LoginBoxType> = ({ signupHandler }) => {
+const LoginBox: React.FC<LoginBoxType> = ({ signupHandler, className }) => {
   const inputLogin = useRef<HTMLInputElement>(null);
   useEffect(() => {
     inputLogin.current?.focus();
   }, []);
   return (
-    <div>
-      <div className="flex justify-center flex-col items-center">
+    <div className={`${className}`}>
+      <div className="flex justify-center flex-col items-center text-center">
         <h4 className="font-bold-shabnam! mb-[17px] text-2xl text-gray-12">
           ورود
         </h4>

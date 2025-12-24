@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
       className={`mx-auto top-0 ${
         path !== "/" ? "bg-gray-2 md:mt-10" : "bg-white md:top-10"
       } container md:rounded-2xl ${
-        path === "/user-admin" ? "hidden" : "flex"
+        path === "/user-admin" || path.includes("/add-post") ? "hidden" : "flex"
       } items-center ${
         path === "/" ? "absolute" : "static"
       } left-0 right-0 z-50 h-14.5 md:h-[115px] *:text-gray-10 px-4 md:px-4 lg:px-8 justify-between max-[267px]:px-2 w-full md:w-[90%]`}
