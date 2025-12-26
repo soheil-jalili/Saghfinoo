@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
   return (
     <footer
       className={`bg-gray-2 ${
-        path.includes("/user-admin") || path.includes("/add-post")
+        path == '/user-admin' || path == '/add-post'
           ? "hidden"
           : "block"
       }`}
