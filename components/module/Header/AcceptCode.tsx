@@ -2,10 +2,14 @@ import React from "react";
 import AcceptCodeTimer from "./AcceptCodeTimer";
 import LoginInput from "./LoginInput";
 
-const AcceptCode: React.FC = () => {
-  const acceptCodeHandler = () => { };
+type Prop = {
+  className?: string;
+};
+
+const AcceptCode: React.FC<Prop> = ({className}) => {
+  const acceptCodeHandler = () => {};
   return (
-    <div>
+    <div className={`${className}`}>
       <div className="flex justify-center flex-col items-center">
         <h4 className="font-bold-shabnam! mb-10 text-2xl text-gray-12">
           کد تائید
@@ -18,7 +22,6 @@ const AcceptCode: React.FC = () => {
         </button>
 
         <LoginInput />
-
       </div>
 
       <AcceptCodeTimer fontSize="text-sm" />
