@@ -27,13 +27,14 @@ const News: React.FC = () => {
           className="md:flex-1 xl:flex-[2.7]"
           image="/assets/images/news/housing.png"
           imageHeight={375}
+          heightSection="567.6px"
           title="خطر ویرانی زلزله در آسمان‌خراش‌ها بیشتر است یا در آپارتمان‌های کم‌ارتفاع و یا خانه‌های ویلایی ؟"
           description=" زلزله یکی از حوادث طبیعی است که نمی‌توان زمان و مکان وقوع زلزله آن
             را بصورت دقیق پیش‌بینی کرد. به همین دلیل اکثر افراد در هنگام زلزله
             نمی‌دانند که باید چه واکنشی از خود نشان دهند؛ حتی بسیاری از افراد تا
             چند دقیقه پس از وقوع زلزله هنوز نمی‌دانند که زلزله رخ داده است."
         />
-        <div className="flex flex-col gap-4 md:flex-1 xl:flex-1 w-full">
+        <div className="flex flex-col gap-4 flex-1 w-full">
           <HousingCard />
           <HousingCard />
         </div>
@@ -68,6 +69,7 @@ const News: React.FC = () => {
           widthTitle={"200"}
           imageHeight={563}
           paddingBottom={"8"}
+          heightSection="859px"
         />
         <div className="flex flex-col gap-4 md:flex-1 xl:flex-1 w-full">
           <HousingCard />

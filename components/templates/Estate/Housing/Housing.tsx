@@ -11,6 +11,7 @@ type Prop = {
   widthTitle?: string | null;
   imageHeight?: number;
   paddingBottom?: string | null;
+  heightSection: string;
 };
 const Housing: React.FC<Prop> = ({
   className,
@@ -21,18 +22,27 @@ const Housing: React.FC<Prop> = ({
   widthTitle = null,
   paddingBottom = null,
   imageHeight,
+  heightSection,
 }) => {
   return (
     <div
       className={`mx-4 md:ml-0 md:mr-10.5 lg:mr-[65px] xl:mx-0 ${className}`}
     >
-      <section className="w-full border border-gray-5 rounded-2xl pb-7.5 sm:pb-[21px]">
+      <section
+        className={`w-full border border-gray-5 rounded-2xl pb-7.5 sm:pb-[21px]`}
+        style={{
+          height: heightSection,
+        }}
+      >
         <Image
           src={image}
           width={830}
           height={imageHeight}
           alt={title}
-          className="w-full overflow-hidden rounded-t-2xl"
+          className={`w-full overflow-hidden rounded-t-2xl`}
+          style={{
+            height: `${imageHeight}px`,
+          }}
         />
         <div className="mx-2 sm:mx-4">
           <Badge className="mt-[19px] sm:mt-[9px] w-[101px] h-5.5 sm:w-[115px] sm:h-7.5 mb-2">
@@ -48,7 +58,7 @@ const Housing: React.FC<Prop> = ({
               className={`text-gray-10 text-[10px] sm:text-lg w-full
               ${paddingBottom !== null ? `pb-${paddingBottom}` : ""}
                 ${
-                  lineClampDescriptionSm !== null ? "line-clamp-2" : null
+                  lineClampDescriptionSm !== null ? "line-clamp-1!" : null
                 } sm:line-clamp-${
                 lineClampDescriptionSm !== null ? lineClampDescriptionSm : null
               }`}
