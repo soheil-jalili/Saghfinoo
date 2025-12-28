@@ -9,7 +9,7 @@ import "swiper/css";
 
 const RelatedLink: React.FC = () => {
   return (
-    <div className="w-150 rounded-none sm:rounded-lg bg-gray-2 px-4 sm:px-6 lg:px-10 py-6 sm:mb-14">
+    <div className="w-150 rounded-none sm:rounded-lg bg-gray-2 px-4 sm:px-6 lg:px-10 py-6 mb-10 sm:mb-14">
       <TitleRent title="لینک‌های مرتبط" />
 
       <Swiper

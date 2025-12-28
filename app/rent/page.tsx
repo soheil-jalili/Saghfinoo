@@ -152,6 +152,8 @@ const RentPage: React.FC = () => {
             />
           </div>
         </div>
+
+        
         <div className="flex-1">
           <Image
             src={"/assets/images/map/map.png"}
