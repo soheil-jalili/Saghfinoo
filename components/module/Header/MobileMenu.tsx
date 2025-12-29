@@ -13,7 +13,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 }: MobileMenuProps) => {
   return (
     <div
-      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 ${openMenu ? "right-0" : "-right-full"
+      className={`w-full bg-white h-full fixed bottom-0 top-0 left-0 z-50  ${openMenu ? "right-0" : "-right-full"
         } transition-all flex flex-col justify-between`}
     >
       <div>

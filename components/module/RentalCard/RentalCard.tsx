@@ -32,8 +32,7 @@ const RentalCard: React.FC<Prop> = ({
           <p className="text-gray-8 text-[10px] sm:text-base">{title}</p>
           <button onClick={addToBookmark} className="cursor-pointer">
             <svg
-              width="24"
-              height="24"
+              className="w-3 h-3 sm:w-6 sm:h-6"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
