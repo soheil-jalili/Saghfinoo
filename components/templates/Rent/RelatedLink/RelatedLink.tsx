@@ -12,11 +12,7 @@ const RelatedLink: React.FC = () => {
     <div className="w-150 rounded-none sm:rounded-lg bg-gray-2 px-4 sm:px-6 lg:px-10 py-6 mb-10 sm:mb-14">
       <TitleRent title="لینک‌های مرتبط" />
 
-      <Swiper
-        className="mySwiper"
-        spaceBetween={16}
-        slidesPerView={3.5}
-      >
+      <Swiper className="mySwiper" spaceBetween={16} slidesPerView={3.5}>
         {Array.from({ length: 9 }).map((item) => {
           return (
             <SwiperSlide>
