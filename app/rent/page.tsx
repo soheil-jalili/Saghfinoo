@@ -14,9 +14,9 @@ const RentPage: React.FC = () => {
       <FilterRent />
       <div className="flex justify-between gap-x-6 mb-14">
         <div className="flex-1">
-          <TitlePage title="املاک اجاره‌ای" className="mb-2! mt-0!" />
+          <TitlePage title="املاک اجاره‌ای" className="mb-2! mt-0! lg:px-[57px] xl:px-0" />
 
-          <div className="flex justify-between mb-5 sm:mb-6 place-items-baseline px-4 md:px-0">
+          <div className="flex justify-between mb-5 sm:mb-6 place-items-baseline px-4 lg:px-16 xl:px-0 ">
             <p className="text-primary text-sm sm:text-lg hidden sm:block">
               ۴۷.۵۰۷ مورد یافت شد
             </p>
@@ -27,7 +27,8 @@ const RentPage: React.FC = () => {
             <FilterNewOld />
           </div>
 
-          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 justify-start sm:justify-between content-start mb-10 sm:mb-14 px-4 md:px-0 md:pb-0">
+
+          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 justify-start xl:justify-between content-start mb-10 sm:mb-14 px-4 lg:px-[57px] xl:px-0 md:px-0 md:pb-0">
             <RentalCard
               image={"/assets/images/rent/rent.png"}
               title="رهن و اجاره آپارتمان نوساز"
@@ -64,7 +65,7 @@ const RentPage: React.FC = () => {
 
           <EstateRelated />
 
-          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 sm:justify-between justify-start content-start mb-10 sm:mb-14 px-4 md:px-0 md:pb-0">
+          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 xl:justify-between justify-start content-start mb-10 sm:mb-14 px-4 lg:px-[57px] xl:px-0 md:pb-0">
             <RentalCard
               image={"/assets/images/rent/rent.png"}
               title="رهن و اجاره آپارتمان نوساز"
@@ -101,7 +102,7 @@ const RentPage: React.FC = () => {
 
           <RelatedLink />
 
-          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 sm:justify-between justify-start px-4 md:px-0 md:pt-0 ">
+          <div className="flex flex-wrap gap-y-3 gap-x-4 sm:gap-x-6 sm:gap-y-4 justify-center xl:justify-between  px-4 lg:px-[25px] xl:px-0 md:pt-0 ">
             <RentalCard
               image={"/assets/images/rent/rent.png"}
               title="رهن و اجاره آپارتمان نوساز"

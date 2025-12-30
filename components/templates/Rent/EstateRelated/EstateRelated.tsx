@@ -2,7 +2,6 @@
 import React from "react";
 import EstateCard from "../../Estate/EstateCard/EstateCard";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -11,14 +10,10 @@ import TitleRent from "../TitleRent/TitleRent";
 
 const EstateRelated: React.FC = () => {
   return (
-    <div className="w-150 rounded-none sm:rounded-lg bg-gray-2 px-4 sm:px-6 lg:px-10 py-6 mb-10 sm:mb-14">
+    <div className="w-full sm:w-150 rounded-none sm:rounded-lg bg-gray-2 px-4 sm:px-6 lg:px-10 py-6 mb-10 sm:mb-14">
       <TitleRent title=" دفاتر املاک مرتبط" />
 
-      <Swiper
-        className="mySwiper"
-        spaceBetween={24}
-        slidesPerView={1.7}
-      >
+      <Swiper className="mySwiper" spaceBetween={24} slidesPerView={1.7}>
         <SwiperSlide>
           <EstateCard
             id={"1"}
