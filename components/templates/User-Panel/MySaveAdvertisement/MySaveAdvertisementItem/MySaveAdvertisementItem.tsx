@@ -11,7 +11,7 @@ const MySaveAdvertisementItem: React.FC = () => {
 
         <ClearAllAdvertisement/>
       </div>
-      <div className="flex gap-x-4 gap-y-3 flex-wrap w-[750px] px-4 pt-8 pb-10 sm:pt-[37px] sm:pb-10.5 sm:pr-[97px]">
+      <div id="my__save_advertisement__item" className="flex md:justify-center lg:justify-normal gap-x-4 gap-y-3 flex-wrap w-auto xl:w-[750px] sm:px-4 pt-8 pb-10 sm:pt-[37px] sm:pb-10.5 xl:pr-[97px]">
         <RentalCard
           image={"/assets/images/rent/rent.png"}
           title="رهن و اجاره آپارتمان نوساز"
