@@ -65,7 +65,7 @@ const BottomFooter: React.FC<BottomFooterType> = ({
             <Link href="/">دانلود اپلیکشن سقفینو</Link>
           </li>
           <li>
-            <Link href="/">تماس با ما</Link>
+            <Link href="/contact">تماس با ما</Link>
           </li>
           <li>
             <Link href="/">داستان ‌سقفینو</Link>

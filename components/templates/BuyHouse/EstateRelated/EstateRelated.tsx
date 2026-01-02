@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import EstateCard from "../../Estate/EstateCard/EstateCard";
-import TitleRent from "@/components/module/TitleRent/TitleRent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import TitleRent from "../TitleRent/TitleRent";
 
 const EstateRelated: React.FC = () => {
   return (
