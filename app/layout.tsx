@@ -9,12 +9,11 @@ export const metadata: Metadata = {
   description:
     "پروژه «سقفینو» پلتفرمی آنلاین برای خرید، فروش و اجاره املاک است.",
 };
+
 export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { [key: string]: string | string[] };
 }) {
   return (
     <html lang="fa" dir="rtl">
