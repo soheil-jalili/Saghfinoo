@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import TitleRent from "../TitleRent/TitleRent";
 import RelatedLinkTitle from "../RelatedLinkTitle/RelatedLinkTitle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
+import TitleRent from "@/components/module/TitleRent/TitleRent";
 
 const RelatedLink: React.FC = () => {
   return (

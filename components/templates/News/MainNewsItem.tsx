@@ -81,7 +81,7 @@ const MainNewsItem: React.FC = () => {
       </div>
       <div className="flex-1">
         <Image
-          src={"/assets/images/news/image.png"}
+          src={"/assets/images/news/image1.png"}
           alt="News Image"
           height={650}
           width={608}
