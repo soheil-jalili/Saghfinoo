@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import TitleRent from "../TitleRent/TitleRent";
+import TitleRent from "@/components/module/TitleRent/TitleRent";
 
 const EstateRelated: React.FC = () => {
   return (
