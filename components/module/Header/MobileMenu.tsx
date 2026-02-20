@@ -46,7 +46,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         <LoginRegisterMobile />
 
         <div className="px-4">
-          <ul className="flex flex-col gap-6">
+          <ul className="flex flex-col gap-6"  onClick={() => setOpenMenu(false)}>
             <li className="flex items-center justify-between">
               <Link href="/add-post" className="flex items-center gap-2">
                 <svg
