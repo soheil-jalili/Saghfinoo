@@ -2,7 +2,6 @@
 
 import LoginBox from "@/components/module/Header/LoginBox";
 import LogoCloseBtn from "@/components/module/LogoCloseBtn/LogoCloseBtn";
-import Image from "next/image";
 import React from "react";
 
 const Register: React.FC = () => {

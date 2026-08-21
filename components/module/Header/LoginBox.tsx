@@ -1,20 +1,34 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import AcceptRule from "./AcceptRule";
+import { useForm } from "react-hook-form";
+import LoginWithPhoneNumberType from "@/types/loginWithPhoneNumberTypes";
 
 type LoginBoxType = {
-  signupHandler: () => void;
+  signupHandler: (data: LoginWithPhoneNumberType) => void;
   className?: string;
 };
 
 const LoginBox: React.FC<LoginBoxType> = ({ signupHandler, className }) => {
-  const inputLogin = useRef<HTMLInputElement>(null);
+  const {
+    register,
+    handleSubmit,
+    setFocus,
+    formState: { errors },
+  } = useForm<LoginWithPhoneNumberType>({
+    defaultValues: {
+      phone: "",
+      acceptRule: false,
+    },
+  });
+
   useEffect(() => {
-    inputLogin.current?.focus();
-  }, []);
+    setFocus("phone");
+  }, [setFocus]);
+
   return (
-    <div className={`${className}`}>
-      <div className="flex justify-center flex-col items-center text-center">
+    <div className={`${className} flex flex-col h-full`}>
+      <div className="flex flex-col items-center justify-center text-center grow">
         <h4 className="font-bold-shabnam! mb-[17px] text-2xl text-gray-12">
           ورود
         </h4>
@@ -24,18 +38,39 @@ const LoginBox: React.FC<LoginBoxType> = ({ signupHandler, className }) => {
         </p>
         <input
           type="text"
-          className="login__register__input text-left"
+          className="login__register__input text-left w-full"
           dir="ltr"
-          ref={inputLogin}
+          {...register("phone", {
+            required: {
+              value: true,
+              message: "شماره تلفن ضروری هستش",
+            },
+            pattern: {
+              value: /^09\d{9}$/,
+              message: "شماره تلفن معتبر نیست (مثال: 09123456789)",
+            },
+          })}
+        />
+        {errors.phone && (
+          <p className="pt-2 text-red-500 text-sm w-full text-right" dir="rtl">
+            {errors.phone.message}
+          </p>
+        )}
+      </div>
+
+      <div className="my-4">
+        <AcceptRule
+          size={"size-6"}
+          radius="rounded-lg"
+          id="accept-rule-desktop"
+          register={register}
         />
       </div>
-      <AcceptRule
-        size={"size-6"}
-        radius="rounded-lg"
-        id="accept-rule-desktop"
-      />
 
-      <button className="primary__btn mt-17" onClick={signupHandler}>
+      <button
+        className="primary__btn mt-auto w-full"
+        onClick={handleSubmit(signupHandler)}
+      >
         ورود
       </button>
     </div>

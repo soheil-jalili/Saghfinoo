@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/module/Footer/Footer";
 import Header from "@/components/module/Header/Header";
-import ReduxProvider from "./(redux)/ReduxProvider";
+import ReduxProvider from "@/redux/ReduxProvider";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Saghfinoo",
@@ -23,6 +24,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </ReduxProvider>
+
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );

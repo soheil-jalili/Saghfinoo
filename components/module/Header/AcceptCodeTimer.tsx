@@ -26,14 +26,14 @@ const AcceptCodeTimer: React.FC<AcceptCodeTimerType> = ({ fontSize }) => {
   return (
     <div className="flex gap-1">
       <GoClock color="#CBCBCB" />
-      <p className={`mb-11 text-gray-6 cursor-pointer ${fontSize}`}>
+      <p className={`mb-11 text-gray-6 ${fontSize}`}>
         {isDoneTime ? (
           <>
             <button className="cursor-pointer">دریافت مجدد کد</button>
           </>
         ) : (
           <>
-            <span className="text-primary cursor-auto">
+            <span className="text-primary">
               {minute.toString().padStart(2, "0")}:
               {second.toString().padStart(2, "0")}
             </span>{" "}

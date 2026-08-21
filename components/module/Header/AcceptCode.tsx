@@ -1,13 +1,24 @@
 import React from "react";
 import AcceptCodeTimer from "./AcceptCodeTimer";
 import LoginInput from "./LoginInput";
+import { appDispatch, appState } from "@/redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { setPhone } from "@/redux/slices/loginWithPhoneNumberSlice";
 
 type Prop = {
   className?: string;
+  setCodeOpen?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const AcceptCode: React.FC<Prop> = ({className}) => {
+const AcceptCode: React.FC<Prop> = ({ className, setCodeOpen }) => {
+  const { phone } = useSelector(
+    (state: appState) => state.loginWithPhoneNumber,
+  );
+
+  const dispatch = useDispatch<appDispatch>();
+
   const acceptCodeHandler = () => {};
+
   return (
     <div className={`${className}`}>
       <div className="flex justify-center flex-col items-center">
@@ -15,9 +26,15 @@ const AcceptCode: React.FC<Prop> = ({className}) => {
           کد تائید
         </h4>
         <p className="text-base text-gray-11 mb-1">
-          کد ارسال‌شده به شماره ۰۹۱۲۳۳۳۴۴۵۵ را وارد کنید
+          کد ارسال‌شده به شماره {phone} را وارد کنید
         </p>
-        <button className="text-gray-9 text-base cursor-pointer mb-6">
+        <button
+          className="text-gray-9 text-base cursor-pointer mb-6"
+          onClick={() => {
+            setCodeOpen!(false);
+            dispatch(setPhone(""));
+          }}
+        >
           ویرایش شماره موبایل
         </button>
 
